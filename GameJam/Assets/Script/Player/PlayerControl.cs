@@ -55,7 +55,7 @@ public class PlayerControl : MonoBehaviour
 	{
 		if (other.CompareTag("Destroy"))
 		{
-			_GameManager.GetComponent<GameManager>().Death();
+			//_GameManager.GetComponent<GameManager>().Death();
 			Destroy(gameObject);
 		}
     }

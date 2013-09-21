@@ -10,7 +10,7 @@ public class Seek : State<EnemyEntity>
 
     public override bool Enter(EnemyEntity bm)
     {
-        //base.Enter();
+        Debug.Log("Seek");
         return true;
     }
 
@@ -29,7 +29,7 @@ public class Seek : State<EnemyEntity>
         }
 
         Vector3 dir = bm.MoveForward();
-        bm.cc.Move(dir * Time.smoothDeltaTime);
+        bm.cc.Move(dir);
 		
         return true;
     }

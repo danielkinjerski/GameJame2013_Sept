@@ -10,6 +10,7 @@ public class Idle : State<EnemyEntity>
 
     public override bool Enter(EnemyEntity bm)
     {
+        Debug.Log("Idle");
         return true;
     }
 
