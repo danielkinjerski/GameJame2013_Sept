@@ -40,7 +40,6 @@ public class PlayerControl : MonoBehaviour
 		Vector3 rightForce = new Vector3();
 		if (Application.platform == RuntimePlatform.Android) 
 		{
-		
 			rightForce = right * 0.8f * moveSpeed;
 		}
 		else

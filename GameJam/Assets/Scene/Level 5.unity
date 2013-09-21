@@ -2292,6 +2292,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 38039f40cda7ebe4a98e09ce3d948a07, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_EditorClassIdentifier: 
   Teleporter_Out: {fileID: 56}
 --- !u!114 &164
 MonoBehaviour:
@@ -2305,6 +2306,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 38039f40cda7ebe4a98e09ce3d948a07, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_EditorClassIdentifier: 
   Teleporter_Out: {fileID: 61}
 --- !u!114 &166
 MonoBehaviour:
@@ -2317,6 +2319,7 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 38039f40cda7ebe4a98e09ce3d948a07, type: 3}
   m_Name: 
+  m_EditorClassIdentifier: 
   m_EditorClassIdentifier: 
   Teleporter_Out: {fileID: 65}
 --- !u!114 &167
