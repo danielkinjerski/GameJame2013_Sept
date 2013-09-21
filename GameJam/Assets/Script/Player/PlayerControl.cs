@@ -17,22 +17,14 @@ public class PlayerControl : MonoBehaviour
 	
 	void Update () 
 	{	
-		Screen.showCursor = false;
-		Screen.lockCursor = true;
+		//Screen.showCursor = false;
+		//Screen.lockCursor = true;
 		Vector3 forward = Camera.main.transform.TransformDirection(Vector3.forward);
 		forward.y = 0;
 		forward = forward.normalized;
 		
 		Vector3 forwardForce = new Vector3();
-		if (Application.platform == RuntimePlatform.Android) 
-		{
-			
-			forwardForce = forward * 1f * moveSpeed;
-		}
-		else
-		{
-			forwardForce = forward * Input.GetAxis("Vertical") * moveSpeed;
-		}
+        forwardForce = forward * Input.GetAxis("Vertical") * moveSpeed;
 		rigidbody.AddForce(forwardForce);
 		
 		Vector3 right= Camera.main.transform.TransformDirection(Vector3.right);
@@ -60,31 +52,7 @@ public class PlayerControl : MonoBehaviour
 	
 	void OnTriggerEnter(Collider other) 
 	{
-		if (other.tag == "Destroy")
-		{
-			_GameManager.GetComponent<GameManager>().Death();
-			Destroy(gameObject);
-		}
-		else if (other.tag == "Coin")
-		{
-			Destroy(other.gameObject);
-			_GameManager.GetComponent<GameManager>().FoundCoin();
-		}
-		else if (other.tag == "SpeedBooster")
-		{
-			movement = new Vector3(0,0,0);
-			
-		}
-		else if (other.tag == "JumpBooster")
-		{
-			movement = new Vector3(0,0,0);
-			
-		}
-		else if (other.tag == "Teleporter")
-		{
-			movement = new Vector3(0,0,0);
-			
-		}
+		
     }
 	
 	/*
