@@ -17,14 +17,22 @@ public class PlayerControl : MonoBehaviour
 	
 	void Update () 
 	{	
-		//Screen.showCursor = false;
-		//Screen.lockCursor = true;
+		Screen.showCursor = false;
+		Screen.lockCursor = true;
 		Vector3 forward = Camera.main.transform.TransformDirection(Vector3.forward);
 		forward.y = 0;
 		forward = forward.normalized;
 		
 		Vector3 forwardForce = new Vector3();
-        forwardForce = forward * Input.GetAxis("Vertical") * moveSpeed;
+		if (Application.platform == RuntimePlatform.Android) 
+		{
+			
+			forwardForce = forward * 1f * moveSpeed;
+		}
+		else
+		{
+			forwardForce = forward * Input.GetAxis("Vertical") * moveSpeed;
+		}
 		rigidbody.AddForce(forwardForce);
 		
 		Vector3 right= Camera.main.transform.TransformDirection(Vector3.right);
@@ -41,28 +49,23 @@ public class PlayerControl : MonoBehaviour
 			rightForce= right * Input.GetAxis("Horizontal") * moveSpeed;
 		}		
 		rigidbody.AddForce(rightForce);
-				
-		/*if (canJump && Input.GetKeyDown(KeyCode.Space))
-		{
-			rigidbody.AddForce(Vector3.up * jumpSpeed * 100);
-			canJump = false;
-		
-		}*/
 	}
 	
 	void OnTriggerEnter(Collider other) 
 	{
-		
+		if (other.CompareTag("Destroy"))
+		{
+			_GameManager.GetComponent<GameManager>().Death();
+			Destroy(gameObject);
+		}
     }
 	
-	/*
 	void OnCollisionEnter(Collision collision)
 	{
-		if (!canJump)
+		if (collision.gameObject.CompareTag("Enemy"))
 		{
-			canJump = true;
 			
 		}
-    }*/
+    }
 	
 }

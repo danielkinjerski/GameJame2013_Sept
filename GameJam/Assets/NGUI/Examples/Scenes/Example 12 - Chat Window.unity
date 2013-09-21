@@ -118,7 +118,6 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 28}
-  - 114: {fileID: 74}
   m_Layer: 0
   m_Name: Window
   m_TagString: Untagged
@@ -360,7 +359,6 @@ GameObject:
   m_Component:
   - 4: {fileID: 43}
   - 114: {fileID: 71}
-  - 114: {fileID: 73}
   m_Layer: 0
   m_Name: 2D UI
   m_TagString: Untagged
@@ -395,7 +393,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 5}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 640, y: 360, z: 0}
+  m_LocalPosition: {x: 821.414917, y: 399.235168, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 26}
@@ -408,7 +406,7 @@ Transform:
   m_GameObject: {fileID: 6}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 171, y: -5, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 255, y: 76, z: 1}
   m_Children: []
   m_Father: {fileID: 25}
 --- !u!4 &27
@@ -418,8 +416,8 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 7}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 368.561707}
+  m_LocalScale: {x: 2453.34131, y: 1253.67053, z: 1}
   m_Children: []
   m_Father: {fileID: 34}
 --- !u!4 &28
@@ -429,7 +427,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 8}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -138, y: 2, z: 0}
+  m_LocalPosition: {x: 0, y: 108, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 31}
@@ -445,8 +443,8 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 9}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 268, y: 162, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: -242, y: -269, z: 0}
+  m_LocalScale: {x: 20, y: 20, z: 1}
   m_Children: []
   m_Father: {fileID: 28}
 --- !u!4 &30
@@ -483,7 +481,7 @@ Transform:
   m_GameObject: {fileID: 12}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 490, y: 420, z: 1}
   m_Children: []
   m_Father: {fileID: 33}
 --- !u!4 &33
@@ -506,7 +504,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 14}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -.5, y: .5, z: 0}
+  m_LocalPosition: {x: -1.52963674, y: 1.52963674, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 25}
@@ -521,7 +519,7 @@ Transform:
   m_GameObject: {fileID: 15}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -242, y: 11, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 20, y: 20, z: 1}
   m_Children: []
   m_Father: {fileID: 37}
 --- !u!4 &36
@@ -532,7 +530,7 @@ Transform:
   m_GameObject: {fileID: 16}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 490, y: 30, z: 1}
   m_Children: []
   m_Father: {fileID: 37}
 --- !u!4 &37
@@ -556,7 +554,7 @@ Transform:
   m_GameObject: {fileID: 18}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: -19, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 494, y: 456.999969, z: 1}
   m_Children: []
   m_Father: {fileID: 31}
 --- !u!4 &39
@@ -567,7 +565,7 @@ Transform:
   m_GameObject: {fileID: 19}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -238, y: -204, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 20, y: 20, z: 1}
   m_Children: []
   m_Father: {fileID: 33}
 --- !u!4 &40
@@ -578,7 +576,7 @@ Transform:
   m_GameObject: {fileID: 20}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: .5, y: 229, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 28, y: 28, z: 1}
   m_Children: []
   m_Father: {fileID: 30}
 --- !u!4 &41
@@ -589,7 +587,7 @@ Transform:
   m_GameObject: {fileID: 21}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 230, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 500, y: 40, z: 1}
   m_Children: []
   m_Father: {fileID: 30}
 --- !u!4 &42
@@ -600,7 +598,7 @@ Transform:
   m_GameObject: {fileID: 22}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 500, y: 500, z: 1}
   m_Children: []
   m_Father: {fileID: 31}
 --- !u!4 &43
@@ -611,7 +609,7 @@ Transform:
   m_GameObject: {fileID: 23}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: .00277777785, y: .00277777785, z: .00277777785}
+  m_LocalScale: {x: .00249999994, y: .00249999994, z: .00249999994}
   m_Children:
   - {fileID: 44}
   - {fileID: 34}
@@ -665,8 +663,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 255.000046, y: 75.9999924, z: 0}
-  m_Center: {x: -127.500023, y: -37.9999962, z: -3}
+  m_Size: {x: .99999994, y: 1, z: 0}
+  m_Center: {x: -.49999997, y: -.499999821, z: -3}
 --- !u!65 &47
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -723,7 +721,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eaee0fa3c7a782f43ac65b3fea68c1d6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  tweenTarget: {fileID: 6}
+  tweenTarget: {fileID: 0}
   tweenGroup: 0
   trigger: 0
   playDirection: 0
@@ -731,7 +729,6 @@ MonoBehaviour:
   ifDisabledOnPlay: 0
   disableWhenFinished: 0
   includeChildren: 0
-  onFinished: []
   eventReceiver: {fileID: 0}
   callWhenFinished: 
 --- !u!114 &53
@@ -748,7 +745,6 @@ MonoBehaviour:
   method: 3
   style: 0
   animationCurve:
-    serializedVersion: 2
     m_Curve:
     - time: 0
       value: 0
@@ -767,7 +763,6 @@ MonoBehaviour:
   duration: .5
   steeperCurves: 0
   tweenGroup: 0
-  onFinished: []
   eventReceiver: {fileID: 0}
   callWhenFinished: 
   from: {x: 171, y: -5, z: 0}
@@ -784,13 +779,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   uiCamera: {fileID: 45}
-  container: {fileID: 0}
+  widgetContainer: {fileID: 0}
+  panelContainer: {fileID: 0}
   side: 4
   halfPixelOffset: 1
   runOnlyOnce: 0
   relativeOffset: {x: 0, y: 0}
   pixelOffset: {x: 0, y: 0}
-  widgetContainer: {fileID: 0}
 --- !u!114 &55
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -802,13 +797,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1b3dc54f924693f41b5cbecb267e647a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mColor: {r: 1, g: 1, b: 1, a: 1}
+  mColor:
+    r: 1
+    g: 1
+    b: 1
+    a: 1
   mPivot: 2
-  mWidth: 255
-  mHeight: 76
   mDepth: 11
   mAtlas: {fileID: 11400000, guid: 2f2473f73b9ca724f9080d6d76009ea2, type: 2}
-  mSpriteName: NGUI
+  mSpriteName: 4e475549
   mFillCenter: 1
   mType: 0
   mFillDirection: 4
@@ -825,13 +822,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1b3dc54f924693f41b5cbecb267e647a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mColor: {r: 1, g: 1, b: 1, a: 1}
+  mColor:
+    r: 1
+    g: 1
+    b: 1
+    a: 1
   mPivot: 4
-  mWidth: 2453
-  mHeight: 1254
   mDepth: -5
   mAtlas: {fileID: 11400000, guid: f95e07e3d350bf748b0c42b453a69d2e, type: 2}
-  mSpriteName: Dark
+  mSpriteName: 4461726b
   mFillCenter: 1
   mType: 0
   mFillDirection: 4
@@ -848,29 +847,30 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e9d0b5f3bbe925a408bd595c79d0bf63, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mColor: {r: 1, g: 1, b: 1, a: 1}
+  mColor:
+    r: 1
+    g: 1
+    b: 1
+    a: 1
   mPivot: 0
-  mWidth: 322
-  mHeight: 321
   mDepth: 6
   mFont: {fileID: 11400000, guid: ac44b8a25154a9d40a172ab5851e0986, type: 2}
-  mText: "This example shows the easiest way of how to create a chat window using
-    NGUI.\n \n[FFAF66]* You can start typing by pressing Enter or by selecting the
-    input field.\n \n* Add new entries to the chat window easily by typing something
-    and pressing Enter.\n \n* Scroll by clicking on the window and using the scroll
-    wheel on the mouse."
+  mText: 54686973206578616d706c652073686f777320746865206561736965737420776179206f6620686f7720746f20637265617465206120636861742077696e646f77207573696e67204e4755492e0a200a5b4646414636365d2a20596f752063616e20737461727420747970696e67206279207072657373696e6720456e746572206f722062792073656c656374696e672074686520696e707574206669656c642e0a200a2a20416464206e657720656e747269657320746f2074686520636861742077696e646f7720656173696c7920627920747970696e6720736f6d657468696e6720616e64207072657373696e6720456e7465722e0a200a2a205363726f6c6c20627920636c69636b696e67206f6e207468652077696e646f7720616e64207573696e6720746865207363726f6c6c20776865656c206f6e20746865206d6f7573652e
+  mMaxLineWidth: 470
+  mMaxLineHeight: 0
   mEncoding: 1
   mMaxLineCount: 0
   mPassword: 0
   mShowLastChar: 0
   mEffectStyle: 0
-  mEffectColor: {r: 0, g: 0, b: 0, a: 1}
+  mEffectColor:
+    r: 0
+    g: 0
+    b: 0
+    a: 1
   mSymbols: 1
   mEffectDistance: {x: 1, y: 1}
-  mOverflow: 0
   mShrinkToFit: 0
-  mMaxLineWidth: 0
-  mMaxLineHeight: 0
   mLineWidth: 0
   mMultiline: 1
 --- !u!114 &58
@@ -898,7 +898,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   style: 1
-  textLabel: {fileID: 66}
+  textLabel: {fileID: 0}
+  maxWidth: 480
   maxHeight: 410
   maxEntries: 50
   supportScrollWheel: 1
@@ -910,18 +911,20 @@ MonoBehaviour:
   m_GameObject: {fileID: 12}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1b3dc54f924693f41b5cbecb267e647a, type: 3}
+  m_Script: {fileID: 11500000, guid: 9d33c6354b54fb847b16b36e1391868d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mColor: {r: .388059676, g: .388059676, b: .388059676, a: .670588255}
+  mColor:
+    r: .388059676
+    g: .388059676
+    b: .388059676
+    a: .670588255
   mPivot: 4
-  mWidth: 490
-  mHeight: 420
   mDepth: 5
   mAtlas: {fileID: 11400000, guid: 2f2473f73b9ca724f9080d6d76009ea2, type: 2}
-  mSpriteName: Dark
+  mSpriteName: 4461726b
   mFillCenter: 1
-  mType: 1
+  mType: 0
   mFillDirection: 4
   mFillAmount: 1
   mInvert: 0
@@ -937,13 +940,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   uiCamera: {fileID: 45}
-  container: {fileID: 0}
+  widgetContainer: {fileID: 0}
+  panelContainer: {fileID: 0}
   side: 8
   halfPixelOffset: 1
   runOnlyOnce: 0
   relativeOffset: {x: 0, y: 0}
   pixelOffset: {x: 0, y: 0}
-  widgetContainer: {fileID: 0}
 --- !u!114 &62
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -955,22 +958,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac5060295fbd39b4a88d20d0c83d925e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  label: {fileID: 63}
+  label: {fileID: 0}
   maxChars: 0
-  caratChar: '|'
-  playerPrefsField: 
+  caratChar: 7c
   type: 0
   isPassword: 0
   autoCorrect: 0
   useLabelTextAtStart: 0
-  activeColor: {r: 1, g: 1, b: 1, a: 1}
+  activeColor:
+    r: 1
+    g: 1
+    b: 1
+    a: 1
   selectOnTab: {fileID: 0}
-  onSubmit:
-  - mTarget: {fileID: 58}
-    mMethodName: OnSubmit
-    oneShot: 0
   eventReceiver: {fileID: 0}
-  functionName: 
+  functionName: 4f6e5375626d6974
 --- !u!114 &63
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -982,25 +984,30 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e9d0b5f3bbe925a408bd595c79d0bf63, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mColor: {r: 1, g: 1, b: 1, a: .564705908}
+  mColor:
+    r: 1
+    g: 1
+    b: 1
+    a: .564705908
   mPivot: 0
-  mWidth: 480
-  mHeight: 20
   mDepth: 6
   mFont: {fileID: 11400000, guid: ac44b8a25154a9d40a172ab5851e0986, type: 2}
-  mText: Press Enter to start typing
-  mEncoding: 0
+  mText: 507265737320456e74657220746f20737461727420747970696e67
+  mMaxLineWidth: 480
+  mMaxLineHeight: 0
+  mEncoding: 1
   mMaxLineCount: 1
   mPassword: 0
   mShowLastChar: 0
   mEffectStyle: 0
-  mEffectColor: {r: 0, g: 0, b: 0, a: 1}
+  mEffectColor:
+    r: 0
+    g: 0
+    b: 0
+    a: 1
   mSymbols: 1
   mEffectDistance: {x: 1, y: 1}
-  mOverflow: 1
   mShrinkToFit: 0
-  mMaxLineWidth: 0
-  mMaxLineHeight: 0
   mLineWidth: 0
   mMultiline: 1
 --- !u!114 &64
@@ -1011,18 +1018,20 @@ MonoBehaviour:
   m_GameObject: {fileID: 16}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1b3dc54f924693f41b5cbecb267e647a, type: 3}
+  m_Script: {fileID: 11500000, guid: 9d33c6354b54fb847b16b36e1391868d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mColor: {r: .384615421, g: 1, b: 0, a: 1}
+  mColor:
+    r: .384615421
+    g: 1
+    b: 0
+    a: 1
   mPivot: 4
-  mWidth: 490
-  mHeight: 30
   mDepth: 5
   mAtlas: {fileID: 11400000, guid: 2f2473f73b9ca724f9080d6d76009ea2, type: 2}
-  mSpriteName: Highlight
+  mSpriteName: 486967686c69676874
   mFillCenter: 1
-  mType: 1
+  mType: 0
   mFillDirection: 4
   mFillAmount: 1
   mInvert: 0
@@ -1034,18 +1043,20 @@ MonoBehaviour:
   m_GameObject: {fileID: 18}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1b3dc54f924693f41b5cbecb267e647a, type: 3}
+  m_Script: {fileID: 11500000, guid: a62f3996954ef684696c03244a67ace1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mColor: {r: .0895522237, g: .0842405409, b: .0654934198, a: 1}
+  mColor:
+    r: .0895522237
+    g: .0842405409
+    b: .0654934198
+    a: 1
   mPivot: 4
-  mWidth: 494
-  mHeight: 457
   mDepth: 4
   mAtlas: {fileID: 11400000, guid: 2f2473f73b9ca724f9080d6d76009ea2, type: 2}
-  mSpriteName: Honeycomb
+  mSpriteName: 486f6e6579636f6d62
   mFillCenter: 1
-  mType: 2
+  mType: 0
   mFillDirection: 4
   mFillAmount: 1
   mInvert: 0
@@ -1060,25 +1071,30 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e9d0b5f3bbe925a408bd595c79d0bf63, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mColor: {r: 1, g: 1, b: 1, a: 1}
+  mColor:
+    r: 1
+    g: 1
+    b: 1
+    a: 1
   mPivot: 6
-  mWidth: 480
-  mHeight: 409
   mDepth: 10
   mFont: {fileID: 11400000, guid: ac44b8a25154a9d40a172ab5851e0986, type: 2}
   mText: 
+  mMaxLineWidth: 480
+  mMaxLineHeight: 0
   mEncoding: 1
   mMaxLineCount: 0
   mPassword: 0
   mShowLastChar: 0
   mEffectStyle: 0
-  mEffectColor: {r: 0, g: 0, b: 0, a: 1}
+  mEffectColor:
+    r: 0
+    g: 0
+    b: 0
+    a: 1
   mSymbols: 1
   mEffectDistance: {x: 1, y: 1}
-  mOverflow: 1
   mShrinkToFit: 0
-  mMaxLineWidth: 0
-  mMaxLineHeight: 0
   mLineWidth: 0
   mMultiline: 1
 --- !u!114 &67
@@ -1092,25 +1108,30 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e9d0b5f3bbe925a408bd595c79d0bf63, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mColor: {r: 1, g: 1, b: 1, a: 1}
+  mColor:
+    r: 1
+    g: 1
+    b: 1
+    a: 1
   mPivot: 4
-  mWidth: 355
-  mHeight: 28
   mDepth: 10
   mFont: {fileID: 11400000, guid: 7a48ea22e80d1ac4b97fdd87f9009546, type: 2}
-  mText: 'Example: Chat Window'
+  mText: 4578616d706c653a20436861742057696e646f77
+  mMaxLineWidth: 0
+  mMaxLineHeight: 0
   mEncoding: 1
   mMaxLineCount: 0
   mPassword: 0
   mShowLastChar: 0
   mEffectStyle: 0
-  mEffectColor: {r: 0, g: 0, b: 0, a: 1}
+  mEffectColor:
+    r: 0
+    g: 0
+    b: 0
+    a: 1
   mSymbols: 1
   mEffectDistance: {x: 1, y: 1}
-  mOverflow: 2
   mShrinkToFit: 0
-  mMaxLineWidth: 0
-  mMaxLineHeight: 0
   mLineWidth: 0
   mMultiline: 1
 --- !u!114 &68
@@ -1121,18 +1142,20 @@ MonoBehaviour:
   m_GameObject: {fileID: 21}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1b3dc54f924693f41b5cbecb267e647a, type: 3}
+  m_Script: {fileID: 11500000, guid: 9d33c6354b54fb847b16b36e1391868d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mColor: {r: 1, g: .908151567, b: .589552283, a: 1}
+  mColor:
+    r: 1
+    g: .908151567
+    b: .589552283
+    a: 1
   mPivot: 4
-  mWidth: 500
-  mHeight: 40
   mDepth: -1
   mAtlas: {fileID: 11400000, guid: 2f2473f73b9ca724f9080d6d76009ea2, type: 2}
-  mSpriteName: Light
+  mSpriteName: 4c69676874
   mFillCenter: 1
-  mType: 1
+  mType: 0
   mFillDirection: 4
   mFillAmount: 1
   mInvert: 0
@@ -1144,18 +1167,20 @@ MonoBehaviour:
   m_GameObject: {fileID: 22}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1b3dc54f924693f41b5cbecb267e647a, type: 3}
+  m_Script: {fileID: 11500000, guid: 9d33c6354b54fb847b16b36e1391868d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mColor: {r: .574626863, g: .574626863, b: .574626863, a: 1}
+  mColor:
+    r: .574626863
+    g: .574626863
+    b: .574626863
+    a: 1
   mPivot: 4
-  mWidth: 500
-  mHeight: 500
   mDepth: -2
   mAtlas: {fileID: 11400000, guid: 2f2473f73b9ca724f9080d6d76009ea2, type: 2}
-  mSpriteName: Dark
+  mSpriteName: 4461726b
   mFillCenter: 1
-  mType: 1
+  mType: 0
   mFillDirection: 4
   mFillAmount: 1
   mInvert: 0
@@ -1170,9 +1195,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2a92b5d748695fd44aac9feef17ba415, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  eventReceiverMask:
-    serializedVersion: 2
-    m_Bits: 4294967295
   debug: 0
   useMouse: 1
   useTouch: 1
@@ -1180,17 +1202,18 @@ MonoBehaviour:
   useKeyboard: 1
   useController: 1
   stickyPress: 1
+  eventReceiverMask: {}
   clipRaycasts: 1
-  stickyTooltip: 1
   tooltipDelay: 1
+  stickyTooltip: 1
   mouseDragThreshold: 4
   mouseClickThreshold: 10
   touchDragThreshold: 40
   touchClickThreshold: 40
   rangeDistance: -1
-  scrollAxisName: Mouse ScrollWheel
-  verticalAxisName: Vertical
-  horizontalAxisName: Horizontal
+  scrollAxisName: 4d6f757365205363726f6c6c576865656c
+  verticalAxisName: 566572746963616c
+  horizontalAxisName: 486f72697a6f6e74616c
   submitKey0: 13
   submitKey1: 330
   cancelKey0: 27
@@ -1208,26 +1231,28 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   showInPanelTool: 1
   generateNormals: 0
+  depthPass: 0
   widgetsAreStatic: 0
   cullWhileDragging: 0
   worldToLocal:
-    e00: 360
+    e00: 400
     e01: 0
     e02: 0
     e03: 0
     e10: 0
-    e11: 360
+    e11: 400
     e12: 0
     e13: 0
     e20: 0
     e21: 0
-    e22: 360
+    e22: 400
     e23: 0
     e30: 0
     e31: 0
     e32: 0
     e33: 1
   mAlpha: 1
+  mDebugInfo: 1
   mClipping: 0
   mClipRange: {x: 0, y: 0, z: 0, w: 0}
   mClipSoftness: {x: 40, y: 40}
@@ -1246,29 +1271,3 @@ NavMeshSettings:
     widthInaccuracy: 16.666666
     heightInaccuracy: 10
   m_NavMesh: {fileID: 0}
---- !u!114 &73
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 23}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2c5ecb5660b11414fb042fb826e03b73, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  scalingStyle: 0
-  manualHeight: 720
-  minimumHeight: 320
-  maximumHeight: 1536
---- !u!114 &74
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 8}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bc1bf488fc3345a41bad73504e63dce1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
