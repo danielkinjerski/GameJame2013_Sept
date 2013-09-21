@@ -49,52 +49,23 @@ public class PlayerControl : MonoBehaviour
 			rightForce= right * Input.GetAxis("Horizontal") * moveSpeed;
 		}		
 		rigidbody.AddForce(rightForce);
-				
-		/*if (canJump && Input.GetKeyDown(KeyCode.Space))
-		{
-			rigidbody.AddForce(Vector3.up * jumpSpeed * 100);
-			canJump = false;
-		
-		}*/
 	}
 	
 	void OnTriggerEnter(Collider other) 
 	{
-		if (other.tag == "Destroy")
+		if (other.CompareTag("Destroy"))
 		{
 			_GameManager.GetComponent<GameManager>().Death();
 			Destroy(gameObject);
 		}
-		else if (other.tag == "Coin")
+    }
+	
+	void OnCollisionEnter(Collision collision)
+	{
+		if (collision.gameObject.CompareTag("Enemy"))
 		{
-			Destroy(other.gameObject);
-			_GameManager.GetComponent<GameManager>().FoundCoin();
-		}
-		else if (other.tag == "SpeedBooster")
-		{
-			movement = new Vector3(0,0,0);
-			
-		}
-		else if (other.tag == "JumpBooster")
-		{
-			movement = new Vector3(0,0,0);
-			
-		}
-		else if (other.tag == "Teleporter")
-		{
-			movement = new Vector3(0,0,0);
 			
 		}
     }
-	
-	/*
-	void OnCollisionEnter(Collision collision)
-	{
-		if (!canJump)
-		{
-			canJump = true;
-			
-		}
-    }*/
 	
 }
