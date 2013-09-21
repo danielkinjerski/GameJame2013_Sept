@@ -17,6 +17,8 @@ public class PlayerControl : MonoBehaviour
 	
 	void Update () 
 	{	
+		Screen.showCursor = false;
+		Screen.lockCursor = true;
 		Vector3 forward = Camera.main.transform.TransformDirection(Vector3.forward);
 		forward.y = 0;
 		forward = forward.normalized;

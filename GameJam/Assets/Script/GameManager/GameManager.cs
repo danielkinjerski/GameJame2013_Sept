@@ -89,7 +89,8 @@ public class GameManager: MonoBehaviour
 	
 	public void Death()
 	{
-		
+		Screen.showCursor = true;
+		Screen.lockCursor = false;
 		death = true;
 	}
 }
