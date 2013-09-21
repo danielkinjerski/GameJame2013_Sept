@@ -18,7 +18,7 @@ public class AIController : MonoBehaviour
 	
 	void Start()
 	{
-		waypoints = GameObject.FindGameObjectsWithTag("Waypoint");
+		//waypoints = GameObject.FindGameObjectsWithTag("Waypoint");
 		
 		if(player == null)
 		{
