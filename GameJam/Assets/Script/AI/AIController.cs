@@ -8,7 +8,7 @@ public class AIController : MonoBehaviour
 	public float speed = 8f;
 	public float lookRadius = 15f;
 	public float chase = .6f;
-	public bool loop = true;
+	//public bool loop = true;
 	
 	private int currentWaypoint;
 	private Vector3 target;
@@ -18,6 +18,8 @@ public class AIController : MonoBehaviour
 	
 	void Start()
 	{
+		waypoints = GameObject.FindGameObjectsWithTag("Waypoint");
+		
 		if(player == null)
 		{
 			player = GameObject.FindGameObjectWithTag("Player").transform;
@@ -37,7 +39,7 @@ public class AIController : MonoBehaviour
 			
 			if(moveDirection.magnitude < 1)
 			{
-				currentWaypoint++;
+				currentWaypoint = Random.Range(0, waypoints.Length);
 			}
 			//player is certain distance from AI
 			else if(distancePlayer.magnitude < lookRadius)
@@ -65,7 +67,7 @@ public class AIController : MonoBehaviour
 				velocity = moveDirection.normalized * speed;
 			}
 		}
-		else
+		/*else
 		{
 			//loops through the waypoints
 			if(loop)
@@ -76,7 +78,7 @@ public class AIController : MonoBehaviour
 			{
 				velocity = Vector3.zero;
 			}
-		}
+		}*/
 		
 		rigidbody.velocity = velocity;
 	}
