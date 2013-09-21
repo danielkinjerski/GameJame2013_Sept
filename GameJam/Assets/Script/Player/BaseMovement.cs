@@ -7,6 +7,8 @@ public class BaseMovement : MonoBehaviour {
     public float weight, gravity, accelerationRate;
     public float downwardForce = 0;
     public Transform trans;
+    public Transform target;
+    float threshold = 0;
 
     public StateMachine<BaseMovement> movementSM = new StateMachine<BaseMovement>();
 
@@ -77,6 +79,16 @@ public class BaseMovement : MonoBehaviour {
         if (moveDir.magnitude == 0)
             moveDir = trans.forward * speed;
 
+    }
+
+
+    float CheckDistanceToTarget()
+    {
+        if(target != null)
+        {
+            return (target.position - trans.position).magnitude;
+        }
+        return threshold;
     }
 
 	

@@ -15,7 +15,7 @@ public class Idle : State<BaseMovement>
 
     public override bool Execute(BaseMovement bm)
     {
-        // Play idle anim
+        if
 
         return true;
     }
