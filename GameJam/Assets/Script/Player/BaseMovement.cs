@@ -8,9 +8,8 @@ public class BaseMovement : MonoBehaviour {
     public float downwardForce = 0;
     public Transform trans;
     public Transform target;
-    float threshold = 0;
-
-    public StateMachine<BaseMovement> movementSM = new StateMachine<BaseMovement>();
+    public float seekThreshold = 0;
+    public float attackThreshold = 0;
 
     public CharacterController cc;
 
@@ -21,10 +20,7 @@ public class BaseMovement : MonoBehaviour {
         if (cc == null && GetComponent<CharacterController>())
             cc = GetComponent<CharacterController>();
 
-        //entity = GetComponent<BaseEntity>();
-
-        
-        movementSM.Configure(this, Idle.Instance);
+       
     }
 
     public Vector3 MoveForward()
@@ -81,19 +77,4 @@ public class BaseMovement : MonoBehaviour {
 
     }
 
-
-    float CheckDistanceToTarget()
-    {
-        if(target != null)
-        {
-            return (target.position - trans.position).magnitude;
-        }
-        return threshold;
-    }
-
-	
-	// Update is called once per frame
-	void Update () {
-	
-	}
 }
