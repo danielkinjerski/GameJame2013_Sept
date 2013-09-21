@@ -1,12 +1,12 @@
-using UnityEngine;
+﻿using UnityEngine;
 using System.Collections;
 
-public class Seek : State<NPC> 
+public class Chase : State<NPC> 
 {
-    static readonly Seek instance = new Seek();
-    public static Seek Instance {get {return instance;}}
-    static Seek() { }
-    private Seek() { }
+    static readonly Chase instance = new Chase();
+    public static Chase Instance {get {return instance;}}
+    static Chase() { }
+    private Chase() { }
 
     protected virtual void Start()
     {
@@ -21,10 +21,7 @@ public class Seek : State<NPC>
 
     public override bool Execute(NPC e)
     {
-        if(e.SearchPlayer())	
-		{
-			e.FSMenemy.ChangeState(Chase.Instance);
-		}
+        
 		
         return true;
     }

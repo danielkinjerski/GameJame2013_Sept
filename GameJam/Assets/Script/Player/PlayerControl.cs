@@ -49,12 +49,12 @@ public class PlayerControl : MonoBehaviour
 		}		
 		rigidbody.AddForce(rightForce);
 				
-		if (canJump && Input.GetKeyDown(KeyCode.Space))
+		/*if (canJump && Input.GetKeyDown(KeyCode.Space))
 		{
 			rigidbody.AddForce(Vector3.up * jumpSpeed * 100);
 			canJump = false;
 		
-		}
+		}*/
 	}
 	
 	void OnTriggerEnter(Collider other) 
@@ -86,6 +86,7 @@ public class PlayerControl : MonoBehaviour
 		}
     }
 	
+	/*
 	void OnCollisionEnter(Collision collision)
 	{
 		if (!canJump)
@@ -93,6 +94,6 @@ public class PlayerControl : MonoBehaviour
 			canJump = true;
 			
 		}
-    }
+    }*/
 	
 }
