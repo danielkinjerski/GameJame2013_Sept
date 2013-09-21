@@ -1,0 +1,21 @@
+# Ignore the contributor's local assets folder, subfolders, and files
+GameJam/Assets/~Local/*
+GameJam/Assets/~Local/**/*
+
+# Ignore Library files
+/GameJam/Library/*
+/GameJam/Library/**/*
+
+# Ignore local build files
+GameJam/obj/*
+GameJam/obj/**/*
+GameJam/Temp/*
+GameJam/Temp/**/*
+
+# Ignore local project files
+GameJam/*.csproj
+GameJam/*.pidb
+GameJam/*.sln
+GameJam/*.suo
+GameJam/*.unityproj
+GameJam/*.userprefs
