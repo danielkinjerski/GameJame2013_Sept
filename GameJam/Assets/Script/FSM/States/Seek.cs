@@ -1,20 +1,20 @@
 using UnityEngine;
 using System.Collections;
 
-public class Seek : State<EnemyMovement> 
+public class Seek : State<EnemyEntity> 
 {
     static readonly Seek instance = new Seek();
     public static Seek Instance {get {return instance;}}
     static Seek() { }
     private Seek() { }
 
-    public override bool Enter(EnemyMovement bm)
+    public override bool Enter(EnemyEntity bm)
     {
         //base.Enter();
         return true;
     }
 
-    public override bool Execute(EnemyMovement bm)
+    public override bool Execute(EnemyEntity bm)
     {
         if (bm.CheckDistanceToTarget() > bm.seekThreshold)
         {
@@ -34,7 +34,7 @@ public class Seek : State<EnemyMovement>
         return true;
     }
 
-    public override bool Exit(EnemyMovement bm)
+    public override bool Exit(EnemyEntity bm)
     {
         //base.Exit();
         return true;

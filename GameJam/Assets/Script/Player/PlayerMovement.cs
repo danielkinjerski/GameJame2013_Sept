@@ -1,15 +1,13 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class PlayerMovement : MonoBehaviour {
+public class PlayerEntity : BaseEntity
+{
 
-	// Use this for initialization
-	void Start () {
-	
-	}
-	
-	// Update is called once per frame
-	void Update () {
-	
-	}
+    public override Vector2 InputMovement()
+    {
+        Vector3 dir = Camera.main.transform.forward * Input.GetAxis("Vertical") + Input.GetAxis("Horizontal") * Camera.main.transform.right;
+        Vector2 dir2 = new Vector2(dir.x, dir.z);
+        return dir2.normalized;
+    }
 }

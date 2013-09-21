@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class BaseMovement : MonoBehaviour {
+public class BaseEntity : MonoBehaviour {
 
     public float maxSpeed, speed, targetSpeed;
     public float weight, gravity, accelerationRate;

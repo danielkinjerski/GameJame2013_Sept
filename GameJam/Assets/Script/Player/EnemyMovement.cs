@@ -1,9 +1,9 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class EnemyMovement : BaseMovement 
+public class EnemyEntity : BaseEntity 
 {
-    public StateMachine<EnemyMovement> FSM = new StateMachine<EnemyMovement>();
+    public StateMachine<EnemyEntity> FSM = new StateMachine<EnemyEntity>();
 
     public override Vector2 InputMovement()
     {
@@ -18,6 +18,12 @@ public class EnemyMovement : BaseMovement
             return Vector2.zero;
         }
     }
+
+    public void Update()
+    {
+        FSM.Update();
+    }
+    
 
 
     public float CheckDistanceToTarget()
