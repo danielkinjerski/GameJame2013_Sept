@@ -23,10 +23,12 @@ public class GameManager : MonoBehaviour
 {
     public delegate void GameOver();
     public delegate void LabelUpdate(string text);
+    public delegate void SummaryUpdate(string vcell, string wcell);
     public event LabelUpdate OnTimerIncrement;
     public event LabelUpdate OnWhiteBloodCountChange;
     public event LabelUpdate OnVirusCellCountChange;
     public event GameOver OnGameOver;
+    public event SummaryUpdate OnSummaryUpdate;
 
     public string levels;
 
@@ -34,8 +36,8 @@ public class GameManager : MonoBehaviour
 
     float levelTimer = 0;
     public float maxTime = 60;
-    int whiteBloodCount = 500;
-    int virusCount = 1;
+    public int whiteBloodCount = 500;
+    public int virusCount = 1;
 
     #endregion
 
@@ -71,13 +73,28 @@ public class GameManager : MonoBehaviour
             }
             yield return null;
         }
-        print("time Up");
         levelTimer = 0;
+
         if (OnGameOver != null)
         {
             OnGameOver();
-        }
+        }       
+
+        
         yield break;
+    }
+
+    void Update()
+    {
+        if (whiteBloodCount <= 200)
+        {
+            levelTimer = 0;
+
+            if (OnGameOver != null)
+            {
+                OnGameOver();
+            }       
+        }
     }
 
     public void CellDie()
