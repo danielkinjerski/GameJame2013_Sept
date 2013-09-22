@@ -5,15 +5,46 @@ public class AIHealth : MonoBehaviour
 {
 	public int health = 100;
 	public float regenHealthTime = 1f;
+	public int damageTaken = 20;
+	public int regenAmount = 10;
 	
-	// Update is called once per frame
+	GameObject player;
+	bool isTakingDamage;
+	
 	void Update () {
-		StartCoroutine(Regenerate());
+		//if player collides with enemy[T-cell], press space to do damage
+		if(isTakingDamage && Input.GetKeyDown(KeyCode.Space))
+		{
+			health -= damageTaken;
+			StartCoroutine(Regenerate());
+		}
+		
+		if(health <= 0)
+		{
+			Destroy(this.gameObject);
+		}
 	}
 	
 	IEnumerator Regenerate()
 	{
 		yield return new WaitForSeconds(regenHealthTime);
-		health = 100;
+		health += regenAmount;
 	}
+	
+	void OnCollisionEnter(Collision collision)
+	{
+		if (collision.gameObject.CompareTag("Player"))
+		{
+			isTakingDamage = true;
+			Debug.Log("is hitting");
+		}
+    }
+	
+	void OnCollisionExit(Collision collision)
+	{
+		if (collision.gameObject.CompareTag("Player"))
+		{
+			isTakingDamage = false;
+		}
+    }
 }
