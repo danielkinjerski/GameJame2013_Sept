@@ -3,6 +3,7 @@ using System.Collections;
 
 public class AIHealth : MonoBehaviour 
 {
+	public Material infected;
 	public int health = 100;
 	public float regenHealthTime = 1f;
 	public int damageTaken = 20;

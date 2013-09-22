@@ -3,7 +3,8 @@ using System.Collections;
 
 public class PlayerEntity : BaseEntity
 {
-    
+ 	public int damage;
+	
     public override Vector2 InputMovement()
     {
         Vector3 dir = Camera.main.transform.forward * Input.GetAxis("Vertical") + Input.GetAxis("Horizontal") * Camera.main.transform.right;
@@ -27,4 +28,11 @@ public class PlayerEntity : BaseEntity
                 print("YESSSSSSSSSSSSSSSSSSSSSSS");
         }
     }
+	
+	public void CellCollision(EnemyEntity ee)
+	{
+		if(Input.GetKeyDown(KeyCode.Space))
+			ee.ApplyDamage(damage);	
+	}
+	
 }

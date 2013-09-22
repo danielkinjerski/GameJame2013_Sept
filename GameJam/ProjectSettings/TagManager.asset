@@ -3,9 +3,16 @@
 --- !u!78 &1
 TagManager:
   tags:
-  - 
+  - Player
   - Teleporter
   - Destroy
+  - Enemy
+  - Coin
+  - enemyNormal
+  - enemyPro1
+  - enemyPro2
+  - enemyPro3
+  - enemyInfected
   - 
   Builtin Layer 0: Default
   Builtin Layer 1: TransparentFX
