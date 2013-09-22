@@ -3,7 +3,8 @@ using System.Collections;
 
 public class PlayerEntity : BaseEntity
 {
-    
+ 	public int damage;
+	
     public override Vector2 InputMovement()
     {
         Vector3 dir = Camera.main.transform.forward * Input.GetAxis("Vertical") + Input.GetAxis("Horizontal") * Camera.main.transform.right;
@@ -17,4 +18,15 @@ public class PlayerEntity : BaseEntity
         if(speed != 0)
             cc.Move(dir);
     }
+	
+	void OnCollisionStay(Collision collision)
+	{
+		if(collision.gameObject.CompareTag("Enemy"))
+		{
+			if(Input.GetKeyDown(KeyCode.Space))
+			{
+				collision.gameObject.SendMessage("ApplyDamage", damage);
+			}
+		}
+	}
 }

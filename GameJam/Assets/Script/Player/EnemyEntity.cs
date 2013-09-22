@@ -8,11 +8,22 @@ public class EnemyEntity : BaseEntity
     public Transform target;
     public float seekThreshold = 0;
     public float attackThreshold = 0;
+	
+	public Material infected;
+	public int maxHealth = 100;
+	public int health;
+	public float regenHealthTime = 1f;
+	public int regenAmount = 10;
+	
+	public float destroyTime = 5f;
 
     public void Start()
     {
         base.Start();
         FSM.Configure(this, Idle.Instance);
+		
+		health = maxHealth;
+		StartCoroutine(Regenerate());
     }
 
 
@@ -33,6 +44,12 @@ public class EnemyEntity : BaseEntity
     public void Update()
     {
         FSM.Update();
+		
+		if(health <= 0)
+		{
+			this.gameObject.renderer.material = infected;
+			StartCoroutine(destroyCell());
+		}
     }
     
 
@@ -45,4 +62,29 @@ public class EnemyEntity : BaseEntity
         }
         return seekThreshold;
     }
+	
+	public void ApplyDamage(int damage)
+	{
+		health -= damage;
+	}
+	
+	IEnumerator Regenerate()
+	{
+		while(true)
+		{
+			yield return new WaitForSeconds(regenHealthTime);
+			health += regenAmount;
+			
+			if(health > maxHealth)
+			{
+				health = maxHealth;
+			}
+		}
+	}
+	
+	IEnumerator destroyCell()
+	{
+		yield return new WaitForSeconds(destroyTime);
+		Destroy(this.gameObject);
+	}
 }
