@@ -759,7 +759,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &354944212
 Transform:
   m_ObjectHideFlags: 0
@@ -3251,10 +3251,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mColor: {r: .184313729, g: .184313729, b: .184313729, a: 1}
   mPivot: 2
-  mWidth: 78
-  mHeight: 20
+  mWidth: 63
+  mHeight: 28
   mDepth: 0
-  mFont: {fileID: 11400000, guid: ac44b8a25154a9d40a172ab5851e0986, type: 2}
+  mFont: {fileID: 11400000, guid: 7a48ea22e80d1ac4b97fdd87f9009546, type: 2}
   mText: 500
   mEncoding: 1
   mMaxLineCount: 0
@@ -4257,7 +4257,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1738028296}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 315, y: 210, z: 0}
+  m_LocalPosition: {x: 314.999939, y: 210, z: -6.10351562e-05}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 354944212}
@@ -4275,10 +4275,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mColor: {r: .367647052, g: .013516427, b: .013516427, a: 1}
   mPivot: 2
-  mWidth: 7
-  mHeight: 20
+  mWidth: 9
+  mHeight: 28
   mDepth: 1
-  mFont: {fileID: 11400000, guid: ac44b8a25154a9d40a172ab5851e0986, type: 2}
+  mFont: {fileID: 11400000, guid: 7a48ea22e80d1ac4b97fdd87f9009546, type: 2}
   mText: 1
   mEncoding: 1
   mMaxLineCount: 0
