@@ -37,7 +37,7 @@ public class AIController : MonoBehaviour
 			velocity = rigidbody.velocity;
 			transform.LookAt(waypoints[currentWaypoint]);
 			
-			if(moveDirection.magnitude < 1)
+			if(moveDirection.magnitude < 2)
 			{
 				currentWaypoint = Random.Range(0, waypoints.Length);
 			}
@@ -54,7 +54,7 @@ public class AIController : MonoBehaviour
 					{
 						velocity = Vector3.zero;
 						velocity = (player.position - transform.position) * chase;
-						if(distancePlayer.magnitude > 1 && distancePlayer.magnitude < 3)
+						if(distancePlayer.magnitude > 2 && distancePlayer.magnitude < 3)
 						{
 							velocity = Vector3.zero;
 						}
@@ -79,7 +79,7 @@ public class AIController : MonoBehaviour
 				velocity = Vector3.zero;
 			}
 		}*/
-		
+		velocity.y=0;
 		rigidbody.velocity = velocity;
 	}
 }

@@ -670,8 +670,7 @@ MonoBehaviour:
   mHeight: 60
   mDepth: 15
   mFont: {fileID: 11400000, guid: ac44b8a25154a9d40a172ab5851e0986, type: 2}
-  mText: 'cool stuf cool stuf cool stuf cool stuf cool stuf cool stuf cool stuf cool
-    stuf cool stuf cool stuf cool stuf cool stuf cool stuf '
+  mText: This CD4_Cell has no drugs in it. defence 0.
   mEncoding: 1
   mMaxLineCount: 3
   mPassword: 0
@@ -709,7 +708,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 335048472}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -30, z: 0}
+  m_LocalPosition: {x: 13, y: -30, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 555045578}
@@ -726,12 +725,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mColor: {r: 1, g: 1, b: 1, a: 1}
   mPivot: 1
-  mWidth: 150
+  mWidth: 176
   mHeight: 60
   mDepth: 17
   mFont: {fileID: 11400000, guid: ac44b8a25154a9d40a172ab5851e0986, type: 2}
-  mText: 'cool stuf cool stuf cool stuf cool stuf cool stuf cool stuf cool stuf cool
-    stuf cool stuf cool stuf cool stuf cool stuf cool stuf '
+  mText: This CD4_Cell has 2 of the drugs, defence is 2.
   mEncoding: 1
   mMaxLineCount: 3
   mPassword: 0
@@ -1054,8 +1052,7 @@ MonoBehaviour:
   mHeight: 60
   mDepth: 17
   mFont: {fileID: 11400000, guid: ac44b8a25154a9d40a172ab5851e0986, type: 2}
-  mText: 'cool stuf cool stuf cool stuf cool stuf cool stuf cool stuf cool stuf cool
-    stuf cool stuf cool stuf cool stuf cool stuf cool stuf '
+  mText: This is what the cd4 exploding cell looks like.
   mEncoding: 1
   mMaxLineCount: 3
   mPassword: 0
@@ -1412,7 +1409,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 600975874}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -30, z: 0}
+  m_LocalPosition: {x: 35, y: -30, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1907406681}
@@ -1429,14 +1426,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mColor: {r: 1, g: 1, b: 1, a: 1}
   mPivot: 1
-  mWidth: 150
-  mHeight: 60
+  mWidth: 220
+  mHeight: 100
   mDepth: 18
   mFont: {fileID: 11400000, guid: ac44b8a25154a9d40a172ab5851e0986, type: 2}
-  mText: 'cool stuf cool stuf cool stuf cool stuf cool stuf cool stuf cool stuf cool
-    stuf cool stuf cool stuf cool stuf cool stuf cool stuf '
+  mText: This CD4_Cell has all 3 drugs, If you touch it, It will Stop you from destorying
+    cells. You loose.
   mEncoding: 1
-  mMaxLineCount: 3
+  mMaxLineCount: 5
   mPassword: 0
   mShowLastChar: 0
   mEffectStyle: 0
@@ -2411,17 +2408,17 @@ MonoBehaviour:
   widgetsAreStatic: 0
   cullWhileDragging: 0
   worldToLocal:
-    e00: 287.5
+    e00: 160
     e01: 0
     e02: 0
-    e03: .999565363
+    e03: 0
     e10: 0
-    e11: 287.5
+    e11: 160
     e12: 0
-    e13: -1
+    e13: -1.74863386
     e20: 0
     e21: 0
-    e22: 287.5
+    e22: 160
     e23: 0
     e30: 0
     e31: 0
@@ -2883,7 +2880,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1124073814}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -30, z: 0}
+  m_LocalPosition: {x: -2, y: -28, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1872753435}
@@ -2900,12 +2897,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mColor: {r: 1, g: 1, b: 1, a: 1}
   mPivot: 1
-  mWidth: 150
+  mWidth: 164
   mHeight: 60
   mDepth: 16
   mFont: {fileID: 11400000, guid: ac44b8a25154a9d40a172ab5851e0986, type: 2}
-  mText: 'cool stuf cool stuf cool stuf cool stuf cool stuf cool stuf cool stuf cool
-    stuf cool stuf cool stuf cool stuf cool stuf cool stuf '
+  mText: This CD4_Cell has 1 of the drugs, defense is 1.
   mEncoding: 1
   mMaxLineCount: 3
   mPassword: 0
@@ -3581,7 +3577,7 @@ Transform:
   m_GameObject: {fileID: 1487981385}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: .00347826094, y: .00347826094, z: .00347826094}
+  m_LocalScale: {x: .00625000009, y: .00625000009, z: .00625000009}
   m_Children:
   - {fileID: 1093280449}
   m_Father: {fileID: 1840187343}
@@ -3618,17 +3614,17 @@ MonoBehaviour:
   widgetsAreStatic: 0
   cullWhileDragging: 0
   worldToLocal:
-    e00: 287.5
+    e00: 160
     e01: 0
     e02: 0
     e03: 0
     e10: 0
-    e11: 287.5
+    e11: 160
     e12: 0
     e13: 0
     e20: 0
     e21: 0
-    e22: 287.5
+    e22: 160
     e23: 0
     e30: 0
     e31: 0
@@ -4674,17 +4670,17 @@ MonoBehaviour:
   widgetsAreStatic: 0
   cullWhileDragging: 0
   worldToLocal:
-    e00: 287.5
+    e00: 212
     e01: 0
     e02: 0
-    e03: .999565363
+    e03: 0
     e10: 0
-    e11: 287.5
+    e11: 212
     e12: 0
-    e13: -1
+    e13: -.5
     e20: 0
     e21: 0
-    e22: 287.5
+    e22: 212
     e23: 0
     e30: 0
     e31: 0
@@ -4767,7 +4763,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2025790825}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -.999565363, y: 1, z: 0}
+  m_LocalPosition: {x: 0, y: 1.74863386, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1008219037}

@@ -75,10 +75,10 @@ public class EnemyEntity : BaseEntity
 
         if (health <= 0)
         {
-            /*if (OnDied != null)
+            if (OnDied != null)
             {
                 OnDied();
-            }*/
+            }
             this.gameObject.renderer.material = infected;
             Timed t = GetComponent<Timed>();
             t.m_Mat = this.gameObject.renderer.material;
