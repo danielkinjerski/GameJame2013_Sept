@@ -576,7 +576,7 @@ Transform:
   m_GameObject: {fileID: 5}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: .5, y: 0, z: 0}
-  m_LocalScale: {x: 255, y: 76, z: 1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 36}
 --- !u!4 &36
@@ -694,8 +694,8 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 15}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 5.30999994}
-  m_LocalScale: {x: 12.332674, y: 6.16633701, z: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 5}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 64}
 --- !u!4 &46
@@ -752,7 +752,7 @@ Transform:
   m_GameObject: {fileID: 20}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -0, y: 0, z: 0}
-  m_LocalScale: {x: 200, y: 50, z: 1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 47}
   m_Father: {fileID: 38}
@@ -764,7 +764,7 @@ Transform:
   m_GameObject: {fileID: 21}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -0, y: 0, z: 0}
-  m_LocalScale: {x: 28, y: 28, z: 1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 38}
 --- !u!4 &52
@@ -830,7 +830,7 @@ Transform:
   m_GameObject: {fileID: 26}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 28, y: 28, z: 1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 39}
 --- !u!4 &57
@@ -841,7 +841,7 @@ Transform:
   m_GameObject: {fileID: 27}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 200, y: 50, z: 1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 48}
   m_Father: {fileID: 39}
@@ -853,7 +853,7 @@ Transform:
   m_GameObject: {fileID: 28}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: -19, z: 0}
-  m_LocalScale: {x: 494, y: 456.999969, z: 1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 54}
 --- !u!4 &59
@@ -864,7 +864,7 @@ Transform:
   m_GameObject: {fileID: 29}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -229, y: 120, z: 0}
-  m_LocalScale: {x: 20, y: 20, z: 1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 54}
 --- !u!4 &60
@@ -875,7 +875,7 @@ Transform:
   m_GameObject: {fileID: 30}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: .5, y: 161, z: 0}
-  m_LocalScale: {x: 28, y: 28, z: 1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 54}
 --- !u!4 &61
@@ -886,7 +886,7 @@ Transform:
   m_GameObject: {fileID: 31}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 230, z: 0}
-  m_LocalScale: {x: 500, y: 40, z: 1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 54}
 --- !u!4 &62
@@ -896,8 +896,8 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 32}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 500, y: 500, z: 1}
+  m_LocalPosition: {x: 0, y: -19, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 54}
 --- !u!4 &63
@@ -1321,17 +1321,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1b3dc54f924693f41b5cbecb267e647a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mMat: {fileID: 2100000, guid: e76d0bdab6849b94aa507497bbb96687, type: 2}
-  mTex: {fileID: 2800000, guid: 35452be164663f146b8829318f9c05eb, type: 3}
-  mColor:
-    r: 1
-    g: 1
-    b: 1
-    a: 1
+  mColor: {r: 1, g: 1, b: 1, a: 1}
   mPivot: 4
+  mWidth: 255
+  mHeight: 76
   mDepth: 11
   mAtlas: {fileID: 11400000, guid: f1289d9a909bfda4e97fbd6af270d511, type: 2}
-  mSpriteName: 4e475549
+  mSpriteName: NGUI
+  mFillCenter: 1
+  mType: 0
+  mFillDirection: 4
+  mFillAmount: 1
+  mInvert: 0
 --- !u!114 &88
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1351,6 +1352,7 @@ MonoBehaviour:
   clearSelection: 0
   ifDisabledOnPlay: 0
   disableWhenFinished: 0
+  onFinished: []
   eventReceiver: {fileID: 0}
   callWhenFinished: 
 --- !u!114 &89
@@ -1364,7 +1366,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3f093ad5830afe44aba6efa8b8a5d5b9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  target: {fileID: 0}
+  target: {fileID: 84}
   clipName: 
   trigger: 1
   playDirection: 1
@@ -1372,6 +1374,7 @@ MonoBehaviour:
   clearSelection: 0
   ifDisabledOnPlay: 0
   disableWhenFinished: 0
+  onFinished: []
   eventReceiver: {fileID: 0}
   callWhenFinished: 
 --- !u!114 &90
@@ -1385,7 +1388,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3f093ad5830afe44aba6efa8b8a5d5b9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  target: {fileID: 0}
+  target: {fileID: 85}
   clipName: 
   trigger: 1
   playDirection: 1
@@ -1393,6 +1396,7 @@ MonoBehaviour:
   clearSelection: 0
   ifDisabledOnPlay: 0
   disableWhenFinished: 0
+  onFinished: []
   eventReceiver: {fileID: 0}
   callWhenFinished: 
 --- !u!114 &91
@@ -1409,6 +1413,7 @@ MonoBehaviour:
   method: 0
   style: 0
   animationCurve:
+    serializedVersion: 2
     m_Curve:
     - time: 0
       value: 0
@@ -1427,6 +1432,7 @@ MonoBehaviour:
   duration: .5
   steeperCurves: 0
   tweenGroup: 0
+  onFinished: []
   eventReceiver: {fileID: 0}
   callWhenFinished: 
   from: {x: 30, y: 18, z: 0}
@@ -1450,6 +1456,7 @@ MonoBehaviour:
   ifDisabledOnPlay: 0
   disableWhenFinished: 0
   includeChildren: 1
+  onFinished: []
   eventReceiver: {fileID: 0}
   callWhenFinished: 
 --- !u!114 &93
@@ -1471,6 +1478,7 @@ MonoBehaviour:
   ifDisabledOnPlay: 0
   disableWhenFinished: 0
   includeChildren: 1
+  onFinished: []
   eventReceiver: {fileID: 0}
   callWhenFinished: 
 --- !u!114 &94
@@ -1541,6 +1549,7 @@ MonoBehaviour:
   method: 3
   style: 0
   animationCurve:
+    serializedVersion: 2
     m_Curve:
     - time: 0
       value: 0
@@ -1559,6 +1568,7 @@ MonoBehaviour:
   duration: .5
   steeperCurves: 0
   tweenGroup: 0
+  onFinished: []
   eventReceiver: {fileID: 0}
   callWhenFinished: 
   from: {x: -2.78728104, y: 3.93878102, z: 2.82702398}
@@ -1577,6 +1587,7 @@ MonoBehaviour:
   method: 3
   style: 0
   animationCurve:
+    serializedVersion: 2
     m_Curve:
     - time: 0
       value: 0
@@ -1595,6 +1606,7 @@ MonoBehaviour:
   duration: .5
   steeperCurves: 0
   tweenGroup: 0
+  onFinished: []
   eventReceiver: {fileID: 0}
   callWhenFinished: 
   from: {x: -1.27418804, y: -.315431505, z: -1.16163599}
@@ -1611,16 +1623,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tweenTarget: {fileID: 17}
-  hover:
-    r: .600000024
-    g: 1
-    b: .200000003
-    a: 1
-  pressed:
-    r: 0
-    g: 0
-    b: 0
-    a: 1
+  hover: {r: .600000024, g: 1, b: .200000003, a: 1}
+  pressed: {r: 0, g: 0, b: 0, a: 1}
   duration: .200000003
 --- !u!114 &101
 MonoBehaviour:
@@ -1634,16 +1638,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tweenTarget: {fileID: 20}
-  hover:
-    r: .600000024
-    g: 1
-    b: .200000003
-    a: .882352948
-  pressed:
-    r: .283582091
-    g: .283582091
-    b: .283582091
-    a: .890196085
+  hover: {r: .600000024, g: 1, b: .200000003, a: .882352948}
+  pressed: {r: .283582091, g: .283582091, b: .283582091, a: .890196085}
   duration: .200000003
 --- !u!114 &102
 MonoBehaviour:
@@ -1657,16 +1653,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tweenTarget: {fileID: 18}
-  hover:
-    r: .600000024
-    g: 1
-    b: .200000003
-    a: 1
-  pressed:
-    r: 0
-    g: 0
-    b: 0
-    a: 1
+  hover: {r: .600000024, g: 1, b: .200000003, a: 1}
+  pressed: {r: 0, g: 0, b: 0, a: 1}
   duration: .200000003
 --- !u!114 &103
 MonoBehaviour:
@@ -1680,16 +1668,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tweenTarget: {fileID: 27}
-  hover:
-    r: .600000024
-    g: 1
-    b: .200000003
-    a: .847058833
-  pressed:
-    r: .276119411
-    g: .276119411
-    b: .276119411
-    a: .847058833
+  hover: {r: .600000024, g: 1, b: .200000003, a: .847058833}
+  pressed: {r: .276119411, g: .276119411, b: .276119411, a: .847058833}
   duration: .200000003
 --- !u!114 &104
 MonoBehaviour:
@@ -1710,6 +1690,7 @@ MonoBehaviour:
   ifDisabledOnPlay: 0
   disableWhenFinished: 0
   includeChildren: 0
+  onFinished: []
   eventReceiver: {fileID: 0}
   callWhenFinished: 
 --- !u!114 &105
@@ -1731,6 +1712,7 @@ MonoBehaviour:
   ifDisabledOnPlay: 0
   disableWhenFinished: 0
   includeChildren: 0
+  onFinished: []
   eventReceiver: {fileID: 0}
   callWhenFinished: 
 --- !u!114 &106
@@ -1747,6 +1729,7 @@ MonoBehaviour:
   method: 3
   style: 0
   animationCurve:
+    serializedVersion: 2
     m_Curve:
     - time: 0
       value: 0
@@ -1765,6 +1748,7 @@ MonoBehaviour:
   duration: .5
   steeperCurves: 0
   tweenGroup: 0
+  onFinished: []
   eventReceiver: {fileID: 0}
   callWhenFinished: 
   from: {fileID: 44}
@@ -1781,22 +1765,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d5c5ca47aa5c01740810b7c66662099f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mMat: {fileID: 2100000, guid: 6c2b3cc909d408944b7528b7e39f4d38, type: 2}
-  mTex: {fileID: 0}
-  mColor:
-    r: 1
-    g: 1
-    b: 1
-    a: 1
+  mColor: {r: 1, g: 1, b: 1, a: 1}
   mPivot: 4
+  mWidth: 12
+  mHeight: 6
   mDepth: 0
   mRect:
+    serializedVersion: 2
     x: 0
     y: 0
     width: 1
     height: 1
   mShader: {fileID: 0}
   mTexture: {fileID: 0}
+  mMat: {fileID: 2100000, guid: 6c2b3cc909d408944b7528b7e39f4d38, type: 2}
 --- !u!114 &108
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1816,21 +1798,21 @@ MonoBehaviour:
   m_GameObject: {fileID: 20}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9d33c6354b54fb847b16b36e1391868d, type: 3}
+  m_Script: {fileID: 11500000, guid: 1b3dc54f924693f41b5cbecb267e647a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mMat: {fileID: 2100000, guid: e76d0bdab6849b94aa507497bbb96687, type: 2}
-  mTex: {fileID: 2800000, guid: 35452be164663f146b8829318f9c05eb, type: 3}
-  mColor:
-    r: .184313729
-    g: .258823544
-    b: .494117647
-    a: .925490201
+  mColor: {r: .184313729, g: .258823544, b: .494117647, a: .925490201}
   mPivot: 4
+  mWidth: 200
+  mHeight: 50
   mDepth: 5
   mAtlas: {fileID: 11400000, guid: f1289d9a909bfda4e97fbd6af270d511, type: 2}
-  mSpriteName: 427574746f6e
+  mSpriteName: Button
   mFillCenter: 1
+  mType: 1
+  mFillDirection: 4
+  mFillAmount: 1
+  mInvert: 0
 --- !u!114 &110
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1842,30 +1824,25 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e9d0b5f3bbe925a408bd595c79d0bf63, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mMat: {fileID: 2100000, guid: e76d0bdab6849b94aa507497bbb96687, type: 2}
-  mTex: {fileID: 0}
-  mColor:
-    r: 1
-    g: 1
-    b: 1
-    a: 1
+  mColor: {r: 1, g: 1, b: 1, a: 1}
   mPivot: 4
+  mWidth: 70
+  mHeight: 28
   mDepth: 6
   mFont: {fileID: 11400000, guid: fc7978f4e2005ea418e07fdd0465efe5, type: 2}
-  mText: 48696465
-  mMaxLineWidth: 0
+  mText: Hide
   mEncoding: 1
   mMaxLineCount: 0
   mPassword: 0
   mShowLastChar: 0
   mEffectStyle: 0
-  mEffectColor:
-    r: 0
-    g: 0
-    b: 0
-    a: 1
+  mEffectColor: {r: 0, g: 0, b: 0, a: 1}
   mSymbols: 1
   mEffectDistance: {x: 1, y: 1}
+  mOverflow: 2
+  mShrinkToFit: 0
+  mMaxLineWidth: 0
+  mMaxLineHeight: 0
   mLineWidth: 0
   mMultiline: 1
 --- !u!114 &111
@@ -1922,30 +1899,25 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e9d0b5f3bbe925a408bd595c79d0bf63, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mMat: {fileID: 2100000, guid: e76d0bdab6849b94aa507497bbb96687, type: 2}
-  mTex: {fileID: 0}
-  mColor:
-    r: 1
-    g: 1
-    b: 1
-    a: 1
+  mColor: {r: 1, g: 1, b: 1, a: 1}
   mPivot: 4
+  mWidth: 82
+  mHeight: 28
   mDepth: 6
   mFont: {fileID: 11400000, guid: fc7978f4e2005ea418e07fdd0465efe5, type: 2}
-  mText: 53686f77
-  mMaxLineWidth: 0
+  mText: Show
   mEncoding: 1
   mMaxLineCount: 0
   mPassword: 0
   mShowLastChar: 0
   mEffectStyle: 0
-  mEffectColor:
-    r: 0
-    g: 0
-    b: 0
-    a: 1
+  mEffectColor: {r: 0, g: 0, b: 0, a: 1}
   mSymbols: 1
   mEffectDistance: {x: 1, y: 1}
+  mOverflow: 2
+  mShrinkToFit: 0
+  mMaxLineWidth: 0
+  mMaxLineHeight: 0
   mLineWidth: 0
   mMultiline: 1
 --- !u!114 &115
@@ -1956,21 +1928,21 @@ MonoBehaviour:
   m_GameObject: {fileID: 27}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9d33c6354b54fb847b16b36e1391868d, type: 3}
+  m_Script: {fileID: 11500000, guid: 1b3dc54f924693f41b5cbecb267e647a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mMat: {fileID: 2100000, guid: e76d0bdab6849b94aa507497bbb96687, type: 2}
-  mTex: {fileID: 2800000, guid: 35452be164663f146b8829318f9c05eb, type: 3}
-  mColor:
-    r: .183782578
-    g: .25935185
-    b: .49253732
-    a: .925490201
+  mColor: {r: .183782578, g: .25935185, b: .49253732, a: .925490201}
   mPivot: 4
+  mWidth: 200
+  mHeight: 50
   mDepth: 5
   mAtlas: {fileID: 11400000, guid: f1289d9a909bfda4e97fbd6af270d511, type: 2}
-  mSpriteName: 427574746f6e
+  mSpriteName: Button
   mFillCenter: 1
+  mType: 1
+  mFillDirection: 4
+  mFillAmount: 1
+  mInvert: 0
 --- !u!114 &116
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1979,21 +1951,21 @@ MonoBehaviour:
   m_GameObject: {fileID: 28}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a62f3996954ef684696c03244a67ace1, type: 3}
+  m_Script: {fileID: 11500000, guid: 1b3dc54f924693f41b5cbecb267e647a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mMat: {fileID: 2100000, guid: e76d0bdab6849b94aa507497bbb96687, type: 2}
-  mTex: {fileID: 2800000, guid: 35452be164663f146b8829318f9c05eb, type: 3}
-  mColor:
-    r: .111940324
-    g: .111940324
-    b: .111940324
-    a: 1
+  mColor: {r: .111940324, g: .111940324, b: .111940324, a: 1}
   mPivot: 4
+  mWidth: 494
+  mHeight: 457
   mDepth: 4
   mAtlas: {fileID: 11400000, guid: f1289d9a909bfda4e97fbd6af270d511, type: 2}
-  mSpriteName: 486f6e6579636f6d62
+  mSpriteName: Honeycomb
   mFillCenter: 1
+  mType: 2
+  mFillDirection: 4
+  mFillAmount: 1
+  mInvert: 0
 --- !u!114 &117
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2005,30 +1977,30 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e9d0b5f3bbe925a408bd595c79d0bf63, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mMat: {fileID: 2100000, guid: e76d0bdab6849b94aa507497bbb96687, type: 2}
-  mTex: {fileID: 0}
-  mColor:
-    r: 1
-    g: 1
-    b: 1
-    a: 1
+  mColor: {r: 1, g: 1, b: 1, a: 1}
   mPivot: 0
+  mWidth: 470
+  mHeight: 260
   mDepth: 10
   mFont: {fileID: 11400000, guid: 9dfefea9e318d8c439ce15f9525c0853, type: 2}
-  mText: 54686973206578616d706c652073686f777320686f7720746f206372656174652061206c69742077696e646f7720746861742068617320612072656672616374697665207365652d7468726f756768206261636b67726f756e642e0a200a54686973206973206163686965766564206279207573696e67206120637573746f6d2073686164657220616e6420656e61626c696e672074686520224e6f726d616c732220666c6167206f6e2074686520554950616e656c20726573706f6e7369626c6520666f7220746869732077696e646f772e0a200a427574746f6e73206861766520706f696e74206c696768747320617474616368656420746f207468656d2074686174206c69676874207570207768656e20746865206d6f75736520686f76657273206f766572207468656d2e0a200a506c65617365206e6f746520746861742072656672616374696f6e2077696c6c206f6e6c792073686f77207570206f6e206e6f6e2d6d6f62696c6520706c6174666f726d73207573696e6720556e6974792050726f2061742022476f6f6422206f7220686967686572207175616c6974792073657474696e67732e
-  mMaxLineWidth: 470
+  mText: "This example shows how to create a lit window that has a refractive see-through
+    background.\n \nThis is achieved by using a custom shader and enabling the \"Normals\"
+    flag on the UIPanel responsible for this window.\n \nButtons have point lights
+    attached to them that light up when the mouse hovers over them.\n \nPlease note
+    that refraction will only show up on non-mobile platforms using Unity Pro at \"Good\"
+    or higher quality settings."
   mEncoding: 1
   mMaxLineCount: 0
   mPassword: 0
   mShowLastChar: 0
   mEffectStyle: 0
-  mEffectColor:
-    r: 0
-    g: 0
-    b: 0
-    a: 1
+  mEffectColor: {r: 0, g: 0, b: 0, a: 1}
   mSymbols: 1
   mEffectDistance: {x: 1, y: 1}
+  mOverflow: 0
+  mShrinkToFit: 0
+  mMaxLineWidth: 0
+  mMaxLineHeight: 0
   mLineWidth: 0
   mMultiline: 1
 --- !u!114 &118
@@ -2042,30 +2014,25 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e9d0b5f3bbe925a408bd595c79d0bf63, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mMat: {fileID: 2100000, guid: e76d0bdab6849b94aa507497bbb96687, type: 2}
-  mTex: {fileID: 0}
-  mColor:
-    r: 1
-    g: 1
-    b: 1
-    a: 1
+  mColor: {r: 1, g: 1, b: 1, a: 1}
   mPivot: 4
+  mWidth: 379
+  mHeight: 28
   mDepth: 10
   mFont: {fileID: 11400000, guid: fc7978f4e2005ea418e07fdd0465efe5, type: 2}
-  mText: 4c696768747320616e642052656672616374696f6e
-  mMaxLineWidth: 0
+  mText: Lights and Refraction
   mEncoding: 1
   mMaxLineCount: 0
   mPassword: 0
   mShowLastChar: 0
   mEffectStyle: 0
-  mEffectColor:
-    r: 0
-    g: 0
-    b: 0
-    a: 1
+  mEffectColor: {r: 0, g: 0, b: 0, a: 1}
   mSymbols: 1
   mEffectDistance: {x: 1, y: 1}
+  mOverflow: 2
+  mShrinkToFit: 0
+  mMaxLineWidth: 0
+  mMaxLineHeight: 0
   mLineWidth: 0
   mMultiline: 1
 --- !u!114 &119
@@ -2076,21 +2043,21 @@ MonoBehaviour:
   m_GameObject: {fileID: 31}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9d33c6354b54fb847b16b36e1391868d, type: 3}
+  m_Script: {fileID: 11500000, guid: 1b3dc54f924693f41b5cbecb267e647a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mMat: {fileID: 2100000, guid: e76d0bdab6849b94aa507497bbb96687, type: 2}
-  mTex: {fileID: 2800000, guid: 35452be164663f146b8829318f9c05eb, type: 3}
-  mColor:
-    r: .694029808
-    g: .60159874
-    b: .393628836
-    a: 1
+  mColor: {r: .694029808, g: .60159874, b: .393628836, a: 1}
   mPivot: 4
+  mWidth: 500
+  mHeight: 40
   mDepth: -1
   mAtlas: {fileID: 11400000, guid: f1289d9a909bfda4e97fbd6af270d511, type: 2}
-  mSpriteName: 4c69676874
+  mSpriteName: Light
   mFillCenter: 1
+  mType: 1
+  mFillDirection: 4
+  mFillAmount: 1
+  mInvert: 0
 --- !u!114 &120
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2099,21 +2066,21 @@ MonoBehaviour:
   m_GameObject: {fileID: 32}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9d33c6354b54fb847b16b36e1391868d, type: 3}
+  m_Script: {fileID: 11500000, guid: 1b3dc54f924693f41b5cbecb267e647a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mMat: {fileID: 2100000, guid: e76d0bdab6849b94aa507497bbb96687, type: 2}
-  mTex: {fileID: 2800000, guid: 35452be164663f146b8829318f9c05eb, type: 3}
-  mColor:
-    r: .141791046
-    g: .141791046
-    b: .141791046
-    a: 1
+  mColor: {r: .141791046, g: .141791046, b: .141791046, a: 1}
   mPivot: 4
+  mWidth: 500
+  mHeight: 462
   mDepth: -2
   mAtlas: {fileID: 11400000, guid: f1289d9a909bfda4e97fbd6af270d511, type: 2}
-  mSpriteName: 4461726b
-  mFillCenter: 1
+  mSpriteName: Dark
+  mFillCenter: 0
+  mType: 1
+  mFillDirection: 4
+  mFillAmount: 1
+  mInvert: 0
 --- !u!114 &121
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2125,6 +2092,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2a92b5d748695fd44aac9feef17ba415, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  eventReceiverMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
   debug: 0
   useMouse: 1
   useTouch: 1
@@ -2132,18 +2102,17 @@ MonoBehaviour:
   useKeyboard: 1
   useController: 1
   stickyPress: 1
-  eventReceiverMask: {}
   clipRaycasts: 1
-  tooltipDelay: 1
   stickyTooltip: 1
+  tooltipDelay: 1
   mouseDragThreshold: 4
   mouseClickThreshold: 10
   touchDragThreshold: 40
   touchClickThreshold: 40
   rangeDistance: -1
-  scrollAxisName: 4d6f757365205363726f6c6c576865656c
-  verticalAxisName: 566572746963616c
-  horizontalAxisName: 486f72697a6f6e74616c
+  scrollAxisName: Mouse ScrollWheel
+  verticalAxisName: Vertical
+  horizontalAxisName: Horizontal
   submitKey0: 13
   submitKey1: 330
   cancelKey0: 27
@@ -2161,10 +2130,26 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   showInPanelTool: 1
   generateNormals: 0
-  depthPass: 0
   widgetsAreStatic: 0
+  cullWhileDragging: 0
+  worldToLocal:
+    e00: 1
+    e01: 0
+    e02: 0
+    e03: 0
+    e10: 0
+    e11: 1
+    e12: 0
+    e13: 0
+    e20: 0
+    e21: 0
+    e22: 1
+    e23: 1.5
+    e30: 0
+    e31: 0
+    e32: 0
+    e33: 1
   mAlpha: 1
-  mDebugInfo: 1
   mClipping: 0
   mClipRange: {x: 0, y: 0, z: 0, w: 0}
   mClipSoftness: {x: 40, y: 40}
@@ -2181,10 +2166,26 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   showInPanelTool: 1
   generateNormals: 1
-  depthPass: 0
   widgetsAreStatic: 0
+  cullWhileDragging: 0
+  worldToLocal:
+    e00: 393.923096
+    e01: 0
+    e02: -69.4592667
+    e03: -13.023612
+    e10: 0
+    e11: 400
+    e12: 0
+    e13: -12
+    e20: 69.4592667
+    e21: 0
+    e22: 393.923096
+    e23: 73.8605804
+    e30: 0
+    e31: 0
+    e32: 0
+    e33: 1
   mAlpha: 1
-  mDebugInfo: 1
   mClipping: 0
   mClipRange: {x: 0, y: 0, z: 0, w: 0}
   mClipSoftness: {x: 40, y: 40}

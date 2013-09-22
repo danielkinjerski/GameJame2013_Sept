@@ -27,12 +27,12 @@ Material:
         second: {r: 1, g: 1, b: 1, a: 1}
       data:
         first:
-          name: _ClipSharpness
-        second: {r: 1, g: 1, b: 1, a: 1}
-      data:
-        first:
           name: _ClipRange
         second: {r: -.00124999997, g: .00124999997, b: 1.5, a: 1}
+      data:
+        first:
+          name: _ClipSharpness
+        second: {r: 1, g: 1, b: 1, a: 1}
 --- !u!1002 &2100001
 EditorExtensionImpl:
   serializedVersion: 6

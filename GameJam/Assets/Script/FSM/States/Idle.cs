@@ -16,7 +16,8 @@ public class Idle : State<EnemyEntity>
 
     public override bool Execute(EnemyEntity bm)
     {
-        if (bm.CheckDistanceToTarget() != 0 && bm.CheckDistanceToTarget() < bm.seekThreshold)
+        if (bm.CheckDistanceToTarget() != 0 && 
+            bm.CheckDistanceToTarget() < bm.seekThreshold)
         {
             bm.FSM.ChangeState(Seek.Instance);
         }
