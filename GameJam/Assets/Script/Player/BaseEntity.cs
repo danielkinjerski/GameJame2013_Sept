@@ -8,6 +8,7 @@ public class BaseEntity : MonoBehaviour {
     float downwardForce = 0;
     protected Transform trans;
     public CharacterController cc;
+    public Rigidbody rb;
 
     public virtual void Start()
     {
@@ -15,6 +16,8 @@ public class BaseEntity : MonoBehaviour {
 
         if (cc == null && GetComponent<CharacterController>())
             cc = GetComponent<CharacterController>();
+
+        rb = GetComponent<Rigidbody>();
     }
 
     public Vector3 MoveForward()
@@ -24,7 +27,7 @@ public class BaseEntity : MonoBehaviour {
         dir.Normalize();
         ApplyVelocity(ref dir);
         CorrectDirection(ref dir);
-        ApplyGravity(ref dir);        
+        //ApplyGravity(ref dir);        
         return dir;
     }
 

@@ -8,8 +8,20 @@ public class Hud : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-        gm.onTimerIncrement += gm_onTimerIncrement;
+        gm.OnTimerIncrement += gm_onTimerIncrement;
+        gm.OnVirusCellCountChange += gm_OnVirusCellCountChange;
+        gm.OnWhiteBloodCountChange += gm_OnWhiteBloodCountChange;
 	}
+
+    void gm_OnWhiteBloodCountChange(string text)
+    {
+        whiteBlood.text = text;
+    }
+
+    void gm_OnVirusCellCountChange(string text)
+    {
+        virusCells.text = text;
+    }
 
     void gm_onTimerIncrement(string text)
     {

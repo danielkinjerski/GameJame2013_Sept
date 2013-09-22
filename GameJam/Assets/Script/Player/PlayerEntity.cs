@@ -15,6 +15,16 @@ public class PlayerEntity : BaseEntity
     {
         Vector3 dir = MoveForward();
         if(speed != 0)
-            cc.Move(dir);
+            rb.velocity = dir;
+    }
+
+    void OnCollisionStay(Collision col)
+    {
+        print(col.gameObject.name);
+        if(col.gameObject.CompareTag("Enemy"))
+        {
+            if(Input.GetKeyDown(KeyCode.Space))
+                print("YESSSSSSSSSSSSSSSSSSSSSSS");
+        }
     }
 }

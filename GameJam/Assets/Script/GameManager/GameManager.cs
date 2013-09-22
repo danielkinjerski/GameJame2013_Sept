@@ -19,9 +19,9 @@ public  enum CurrentPlayMode
 public class GameManager : MonoBehaviour
 {
     public delegate void LabelUpdate(string text);
-    public event LabelUpdate onTimerIncrement;
-    public event LabelUpdate onWhiteBloodChange;
-    public event LabelUpdate onVirusCellCountChange;
+    public event LabelUpdate OnTimerIncrement;
+    public event LabelUpdate OnWhiteBloodCountChange;
+    public event LabelUpdate OnVirusCellCountChange;
 
     #region Variables
 
@@ -44,12 +44,12 @@ public class GameManager : MonoBehaviour
         levelTimer = Time.time;
         while (Time.time < levelTimer + maxTime)
         {
-            if (onTimerIncrement != null)
+            if (OnTimerIncrement != null)
             {
                 float timeLeft = maxTime - Time.time + levelTimer;
                 float secs = timeLeft % 60;
                 float mins = timeLeft / 60;
-                onTimerIncrement(string.Format("{0:00}:{1:00}", (int)mins, secs));
+                OnTimerIncrement(string.Format("{0:00}:{1:00}", (int)mins, secs));
             }
             yield return null;
         }
@@ -58,9 +58,17 @@ public class GameManager : MonoBehaviour
         yield break;
     }
 
-    void Update()
+    void CellDie()
     {
+        if (OnWhiteBloodCountChange != null)
+        {
+            OnWhiteBloodCountChange("");
+        }
 
+        if (OnVirusCellCountChange != null)
+        {
+            OnVirusCellCountChange("");
+        }
     }
 
     #endregion
