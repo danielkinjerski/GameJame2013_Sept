@@ -51,15 +51,6 @@ public class PlayerControl : MonoBehaviour
 		rigidbody.AddForce(rightForce);
 	}
 	
-	void OnTriggerEnter(Collider other) 
-	{
-		if (other.CompareTag("Destroy"))
-		{
-			_GameManager.GetComponent<GameManager>().Death();
-			Destroy(gameObject);
-		}
-    }
-	
 	void OnCollisionEnter(Collision collision)
 	{
 		if (collision.gameObject.CompareTag("Enemy"))
