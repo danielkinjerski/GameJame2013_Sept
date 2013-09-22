@@ -37,7 +37,7 @@ public class AIHealth : MonoBehaviour
 		if (collision.gameObject.CompareTag("Player"))
 		{
 			isTakingDamage = true;
-			Debug.Log("is hitting");
+
 		}
     }
 	
