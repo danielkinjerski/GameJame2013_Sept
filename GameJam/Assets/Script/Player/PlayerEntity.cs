@@ -25,14 +25,8 @@ public class PlayerEntity : BaseEntity
         if(col.gameObject.CompareTag("Enemy"))
         {
             if(Input.GetKeyDown(KeyCode.Space))
-                print("YESSSSSSSSSSSSSSSSSSSSSSS");
+                col.gameObject.SendMessage("ApplyDamage",damage);	
         }
     }
-	
-	public void CellCollision(EnemyEntity ee)
-	{
-		if(Input.GetKeyDown(KeyCode.Space))
-			ee.ApplyDamage(damage);	
-	}
 	
 }
