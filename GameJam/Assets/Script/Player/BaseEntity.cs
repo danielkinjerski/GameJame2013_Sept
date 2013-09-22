@@ -8,6 +8,7 @@ public class BaseEntity : MonoBehaviour {
     float downwardForce = 0;
     protected Transform trans;
     public CharacterController cc;
+    public Rigidbody rb;
 
     public virtual void Start()
     {
@@ -15,6 +16,8 @@ public class BaseEntity : MonoBehaviour {
 
         if (cc == null && GetComponent<CharacterController>())
             cc = GetComponent<CharacterController>();
+
+        rb = GetComponent<Rigidbody>();
     }
 
     public Vector3 MoveForward()
@@ -32,7 +35,7 @@ public class BaseEntity : MonoBehaviour {
     {
         if (downwardForce > -gravity)
             downwardForce += -gravity * Time.smoothDeltaTime;
-        moveDir = new Vector3(moveDir.x, downwardForce, moveDir.z) * Time.smoothDeltaTime;
+        moveDir = new Vector3(moveDir.x, downwardForce, moveDir.z);
     }
 
     public virtual Vector2 InputMovement()

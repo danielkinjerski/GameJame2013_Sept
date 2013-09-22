@@ -3,6 +3,7 @@ using System.Collections;
 
 public class AIHealth : MonoBehaviour 
 {
+	public Material infected;
 	public int health = 100;
 	public float regenHealthTime = 1f;
 	public int damageTaken = 20;
@@ -36,7 +37,7 @@ public class AIHealth : MonoBehaviour
 		if (collision.gameObject.CompareTag("Player"))
 		{
 			isTakingDamage = true;
-			Debug.Log("is hitting");
+
 		}
     }
 	

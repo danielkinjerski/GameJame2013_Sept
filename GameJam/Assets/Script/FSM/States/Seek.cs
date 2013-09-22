@@ -29,7 +29,7 @@ public class Seek : State<EnemyEntity>
         }
 
         Vector3 dir = bm.MoveForward();
-        bm.cc.Move(dir);
+        bm.rb.velocity = dir;
 		
         return true;
     }
