@@ -25,6 +25,7 @@ public class PlayerEntity : BaseEntity
 		{
 			if(Input.GetKeyDown(KeyCode.Space))
 			{
+				print("attack");
 				collision.gameObject.SendMessage("ApplyDamage", damage);
 			}
 		}
