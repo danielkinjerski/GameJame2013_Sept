@@ -670,8 +670,7 @@ MonoBehaviour:
   mHeight: 60
   mDepth: 15
   mFont: {fileID: 11400000, guid: ac44b8a25154a9d40a172ab5851e0986, type: 2}
-  mText: 'cool stuf cool stuf cool stuf cool stuf cool stuf cool stuf cool stuf cool
-    stuf cool stuf cool stuf cool stuf cool stuf cool stuf '
+  mText: This CD4 Cell does not have any treatments. Inital Outbreak.
   mEncoding: 1
   mMaxLineCount: 3
   mPassword: 0
@@ -709,7 +708,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 335048472}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -30, z: 0}
+  m_LocalPosition: {x: 19, y: -30, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 555045578}
@@ -726,12 +725,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mColor: {r: 1, g: 1, b: 1, a: 1}
   mPivot: 1
-  mWidth: 150
+  mWidth: 188
   mHeight: 60
   mDepth: 17
   mFont: {fileID: 11400000, guid: ac44b8a25154a9d40a172ab5851e0986, type: 2}
-  mText: 'cool stuf cool stuf cool stuf cool stuf cool stuf cool stuf cool stuf cool
-    stuf cool stuf cool stuf cool stuf cool stuf cool stuf '
+  mText: 'This CD4 Cell is has treatment level 2. For HIV Infection. '
   mEncoding: 1
   mMaxLineCount: 3
   mPassword: 0
@@ -902,6 +900,7 @@ Transform:
   - {fileID: 1713258211}
   - {fileID: 929181633}
   - {fileID: 1096775216}
+  - {fileID: 596991119}
   - {fileID: 781453997}
   - {fileID: 227933408}
   - {fileID: 457738935}
@@ -925,17 +924,17 @@ MonoBehaviour:
   widgetsAreStatic: 0
   cullWhileDragging: 0
   worldToLocal:
-    e00: 287.5
+    e00: 160
     e01: 0
     e02: 0
-    e03: .500108719
+    e03: .606060684
     e10: 0
-    e11: 287.5
+    e11: 160
     e12: 0
-    e13: -1
+    e13: -.606060624
     e20: 0
     e21: 0
-    e22: 287.5
+    e22: 160
     e23: 0
     e30: 0
     e31: 0
@@ -959,6 +958,7 @@ MonoBehaviour:
   gm: {fileID: 1840187344}
   MainLevel: UITest
   PlayLevel: Level 1
+  summary: {fileID: 596991118}
 --- !u!1 &457738934
 GameObject:
   m_ObjectHideFlags: 0
@@ -1033,7 +1033,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 503103798}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -30, z: 0}
+  m_LocalPosition: {x: 17, y: -30, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 646350005}
@@ -1050,12 +1050,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mColor: {r: 1, g: 1, b: 1, a: 1}
   mPivot: 1
-  mWidth: 150
+  mWidth: 184
   mHeight: 60
   mDepth: 17
   mFont: {fileID: 11400000, guid: ac44b8a25154a9d40a172ab5851e0986, type: 2}
-  mText: 'cool stuf cool stuf cool stuf cool stuf cool stuf cool stuf cool stuf cool
-    stuf cool stuf cool stuf cool stuf cool stuf cool stuf '
+  mText: 'This is what the CD4 cell looks like when it is infected and dying. '
   mEncoding: 1
   mMaxLineCount: 3
   mPassword: 0
@@ -1389,6 +1388,67 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   target: {fileID: 354944211}
   state: 1
+--- !u!1 &596991117
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 596991119}
+  - 114: {fileID: 596991118}
+  m_Layer: 8
+  m_Name: lblSummary
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &596991118
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 596991117}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9d0b5f3bbe925a408bd595c79d0bf63, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mColor: {r: 1, g: 1, b: 1, a: 1}
+  mPivot: 4
+  mWidth: 600
+  mHeight: 140
+  mDepth: 8
+  mFont: {fileID: 11400000, guid: 7a48ea22e80d1ac4b97fdd87f9009546, type: 2}
+  mText: You brought the white blood cell count down to [3f3f3f][wcell][-]. Lower
+    than 200 allows for effective HIV take over. The number of virus cells you spawned
+    is [450000][vcell][-].
+  mEncoding: 1
+  mMaxLineCount: 0
+  mPassword: 0
+  mShowLastChar: 0
+  mEffectStyle: 0
+  mEffectColor: {r: 0, g: 0, b: 0, a: 1}
+  mSymbols: 1
+  mEffectDistance: {x: 1, y: 1}
+  mOverflow: 3
+  mShrinkToFit: 0
+  mMaxLineWidth: 0
+  mMaxLineHeight: 0
+  mLineWidth: 0
+  mMultiline: 1
+--- !u!4 &596991119
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 596991117}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 200, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 422358910}
 --- !u!1 &600975874
 GameObject:
   m_ObjectHideFlags: 0
@@ -1412,7 +1472,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 600975874}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -30, z: 0}
+  m_LocalPosition: {x: 35, y: -30, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1907406681}
@@ -1429,14 +1489,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mColor: {r: 1, g: 1, b: 1, a: 1}
   mPivot: 1
-  mWidth: 150
+  mWidth: 220
   mHeight: 60
   mDepth: 18
   mFont: {fileID: 11400000, guid: ac44b8a25154a9d40a172ab5851e0986, type: 2}
-  mText: 'cool stuf cool stuf cool stuf cool stuf cool stuf cool stuf cool stuf cool
-    stuf cool stuf cool stuf cool stuf cool stuf cool stuf '
+  mText: This CD4 Cell has level 3 Treatment, Neutralize the HIV Cell.
   mEncoding: 1
-  mMaxLineCount: 3
+  mMaxLineCount: 5
   mPassword: 0
   mShowLastChar: 0
   mEffectStyle: 0
@@ -1629,11 +1688,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mColor: {r: .367647052, g: .013516427, b: .013516427, a: 1}
   mPivot: 4
-  mWidth: 231
+  mWidth: 185
   mHeight: 28
   mDepth: 7
   mFont: {fileID: 11400000, guid: 7a48ea22e80d1ac4b97fdd87f9009546, type: 2}
-  mText: HIV - THE GAME
+  mText: HIV Invader
   mEncoding: 1
   mMaxLineCount: 0
   mPassword: 0
@@ -2411,17 +2470,17 @@ MonoBehaviour:
   widgetsAreStatic: 0
   cullWhileDragging: 0
   worldToLocal:
-    e00: 287.5
+    e00: 160
     e01: 0
     e02: 0
-    e03: .999565363
+    e03: .606060684
     e10: 0
-    e11: 287.5
+    e11: 160
     e12: 0
-    e13: -1
+    e13: -.606060624
     e20: 0
     e21: 0
-    e22: 287.5
+    e22: 160
     e23: 0
     e30: 0
     e31: 0
@@ -2883,7 +2942,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1124073814}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -30, z: 0}
+  m_LocalPosition: {x: -14, y: -28, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1872753435}
@@ -2900,12 +2959,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mColor: {r: 1, g: 1, b: 1, a: 1}
   mPivot: 1
-  mWidth: 150
+  mWidth: 190
   mHeight: 60
   mDepth: 16
   mFont: {fileID: 11400000, guid: ac44b8a25154a9d40a172ab5851e0986, type: 2}
-  mText: 'cool stuf cool stuf cool stuf cool stuf cool stuf cool stuf cool stuf cool
-    stuf cool stuf cool stuf cool stuf cool stuf cool stuf '
+  mText: 'This CD4 Cell is has treatment level 1. For HIV Infection. '
   mEncoding: 1
   mMaxLineCount: 3
   mPassword: 0
@@ -3192,10 +3250,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mColor: {r: .184313729, g: .184313729, b: .184313729, a: 1}
   mPivot: 2
-  mWidth: 78
-  mHeight: 20
+  mWidth: 63
+  mHeight: 28
   mDepth: 0
-  mFont: {fileID: 11400000, guid: ac44b8a25154a9d40a172ab5851e0986, type: 2}
+  mFont: {fileID: 11400000, guid: 7a48ea22e80d1ac4b97fdd87f9009546, type: 2}
   mText: 500
   mEncoding: 1
   mMaxLineCount: 0
@@ -3581,7 +3639,7 @@ Transform:
   m_GameObject: {fileID: 1487981385}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: .00347826094, y: .00347826094, z: .00347826094}
+  m_LocalScale: {x: .00625000009, y: .00625000009, z: .00625000009}
   m_Children:
   - {fileID: 1093280449}
   m_Father: {fileID: 1840187343}
@@ -3618,17 +3676,17 @@ MonoBehaviour:
   widgetsAreStatic: 0
   cullWhileDragging: 0
   worldToLocal:
-    e00: 287.5
+    e00: 160
     e01: 0
     e02: 0
     e03: 0
     e10: 0
-    e11: 287.5
+    e11: 160
     e12: 0
     e13: 0
     e20: 0
     e21: 0
-    e22: 287.5
+    e22: 160
     e23: 0
     e30: 0
     e31: 0
@@ -3651,6 +3709,7 @@ GameObject:
   - 114: {fileID: 1491390823}
   - 114: {fileID: 1491390822}
   - 114: {fileID: 1491390821}
+  - 114: {fileID: 1491390826}
   m_Layer: 8
   m_Name: btnQuit
   m_TagString: Untagged
@@ -3750,6 +3809,21 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 40, y: 40, z: 0}
   m_Center: {x: 0, y: 0, z: -1.25}
+--- !u!114 &1491390826
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1491390819}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e4c4ff40739c7904ca26c14ffbdc4176, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  target: {fileID: 1840187342}
+  functionName: OnQuit
+  trigger: 4
+  includeChildren: 0
 --- !u!1 &1509357491
 GameObject:
   m_ObjectHideFlags: 0
@@ -4198,7 +4272,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1738028296}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 315, y: 210, z: 0}
+  m_LocalPosition: {x: 314.999939, y: 210, z: -6.10351562e-05}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 354944212}
@@ -4216,10 +4290,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mColor: {r: .367647052, g: .013516427, b: .013516427, a: 1}
   mPivot: 2
-  mWidth: 7
-  mHeight: 20
+  mWidth: 9
+  mHeight: 28
   mDepth: 1
-  mFont: {fileID: 11400000, guid: ac44b8a25154a9d40a172ab5851e0986, type: 2}
+  mFont: {fileID: 11400000, guid: 7a48ea22e80d1ac4b97fdd87f9009546, type: 2}
   mText: 1
   mEncoding: 1
   mMaxLineCount: 0
@@ -4448,6 +4522,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   levels: Level 1
   maxTime: 60
+  whiteBloodCount: 500
+  virusCount: 1
 --- !u!1 &1872753434
 GameObject:
   m_ObjectHideFlags: 0
@@ -4674,17 +4750,17 @@ MonoBehaviour:
   widgetsAreStatic: 0
   cullWhileDragging: 0
   worldToLocal:
-    e00: 287.5
+    e00: 160
     e01: 0
     e02: 0
-    e03: .999565363
+    e03: .606060684
     e10: 0
-    e11: 287.5
+    e11: 160
     e12: 0
-    e13: -1
+    e13: -.606060624
     e20: 0
     e21: 0
-    e22: 287.5
+    e22: 160
     e23: 0
     e30: 0
     e31: 0
@@ -4767,7 +4843,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2025790825}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -.999565363, y: 1, z: 0}
+  m_LocalPosition: {x: -.606060684, y: .606060624, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1008219037}

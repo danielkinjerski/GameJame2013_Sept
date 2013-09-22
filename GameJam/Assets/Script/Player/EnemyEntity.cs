@@ -21,6 +21,8 @@ public class EnemyEntity : BaseEntity
 	public float destroyTime = 5f;
 
     public bool invincible = false;
+	
+	public AudioClip explosion;
 
     public void Start()
     {
@@ -75,10 +77,11 @@ public class EnemyEntity : BaseEntity
 
         if (health <= 0)
         {
-            /*if (OnDied != null)
+            if (OnDied != null)
             {
                 OnDied();
-            }*/
+            }
+			audio.PlayOneShot(explosion);
             this.gameObject.renderer.material = infected;
             Timed t = GetComponent<Timed>();
             t.m_Mat = this.gameObject.renderer.material;
