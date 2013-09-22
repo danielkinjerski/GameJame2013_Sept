@@ -8,7 +8,6 @@ public class PlayerControl : MonoBehaviour
 	public float moveSpeed = 6.0f;
 	public float jumpSpeed = 5.0f;
 	public float drag = 2;
-	private bool canJump = true;
 	
 	void Start()
 	{
@@ -50,13 +49,4 @@ public class PlayerControl : MonoBehaviour
 		}		
 		rigidbody.AddForce(rightForce);
 	}
-	
-	void OnCollisionEnter(Collision collision)
-	{
-		if (collision.gameObject.CompareTag("Enemy"))
-		{
-			
-		}
-    }
-	
 }
