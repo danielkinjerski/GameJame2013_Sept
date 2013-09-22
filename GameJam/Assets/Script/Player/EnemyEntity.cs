@@ -48,6 +48,10 @@ public class EnemyEntity : BaseEntity
 		if(health <= 0)
 		{
 			this.gameObject.renderer.material = infected;
+			Timed t = GetComponent<Timed>();
+			t.m_Mat = this.gameObject.renderer.material;
+			t.enabled = true;
+			GetComponent<BoxCollider>().enabled=false;
 			StartCoroutine(destroyCell());
 		}
     }
