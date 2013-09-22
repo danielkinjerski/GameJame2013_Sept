@@ -404,6 +404,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_EditorClassIdentifier: 
   m_EditorClassIdentifier: 
+  m_EditorClassIdentifier: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &173
 Prefab:
   m_ObjectHideFlags: 0
@@ -2932,7 +2934,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 5400000, guid: f51ad99859e8dcb46b138834f061fc0b, type: 2}
       propertyPath: m_UseGravity
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5400000, guid: f51ad99859e8dcb46b138834f061fc0b, type: 2}
       propertyPath: m_IsKinematic
@@ -2940,7 +2942,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 5400000, guid: f51ad99859e8dcb46b138834f061fc0b, type: 2}
       propertyPath: m_Constraints
-      value: 4
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: f51ad99859e8dcb46b138834f061fc0b, type: 2}
       propertyPath: m_LocalRotation.y
@@ -2949,6 +2951,10 @@ Prefab:
     - target: {fileID: 11400000, guid: f51ad99859e8dcb46b138834f061fc0b, type: 2}
       propertyPath: gravity
       value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: f51ad99859e8dcb46b138834f061fc0b, type: 2}
+      propertyPath: m_Enabled
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 6500000, guid: f51ad99859e8dcb46b138834f061fc0b, type: 2}
@@ -6872,7 +6878,7 @@ GameObject:
   - 4: {fileID: 2026052616}
   - 114: {fileID: 2026052615}
   - 54: {fileID: 2026052617}
-  - 136: {fileID: 2026052614}
+  - 135: {fileID: 2026052614}
   - 114: {fileID: 2026052618}
   m_Layer: 0
   m_Name: Player
@@ -6881,8 +6887,8 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!136 &2026052614
-CapsuleCollider:
+--- !u!135 &2026052614
+SphereCollider:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
@@ -6890,9 +6896,8 @@ CapsuleCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
+  serializedVersion: 2
   m_Radius: .5
-  m_Height: 1
-  m_Direction: 1
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &2026052615
 MonoBehaviour:
@@ -6901,7 +6906,7 @@ MonoBehaviour:
     type: 2}
   m_PrefabInternal: {fileID: 659700300}
   m_GameObject: {fileID: 2026052613}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f53aacf33c8ea0d4b900ab38d8fe03c2, type: 3}
   m_Name: 
@@ -6935,10 +6940,10 @@ Rigidbody:
   m_Mass: 1
   m_Drag: 0
   m_AngularDrag: .0500000007
-  m_UseGravity: 0
+  m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 4
+  m_Constraints: 0
   m_CollisionDetection: 0
 --- !u!114 &2026052618
 MonoBehaviour:
@@ -6948,36 +6953,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 2026052613}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 04d1b7c9e9a19a24ab67123a43c6544b, type: 3}
+  m_Script: {fileID: 11500000, guid: 0f66f43372554cf4790752c14e8f4905, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  method: 0
-  style: 2
-  animationCurve:
-    serializedVersion: 2
-    m_Curve:
-    - time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-    - time: 1
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-  ignoreTimeScale: 1
-  delay: 0
-  duration: 1
-  steeperCurves: 0
-  tweenGroup: 0
-  onFinished: []
-  eventReceiver: {fileID: 0}
-  callWhenFinished: 
-  from: {x: 0, y: 0, z: 0}
-  to: {x: -180, y: 0, z: 0}
+  movement: {x: 0, y: 0, z: 0}
+  moveSpeed: 6
+  jumpSpeed: 5
+  drag: 2
 --- !u!1 &2035315251
 GameObject:
   m_ObjectHideFlags: 0
