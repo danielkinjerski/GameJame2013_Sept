@@ -759,7 +759,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &354944212
 Transform:
   m_ObjectHideFlags: 0
@@ -3710,6 +3710,7 @@ GameObject:
   - 114: {fileID: 1491390823}
   - 114: {fileID: 1491390822}
   - 114: {fileID: 1491390821}
+  - 114: {fileID: 1491390826}
   m_Layer: 8
   m_Name: btnQuit
   m_TagString: Untagged
@@ -3809,6 +3810,21 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 40, y: 40, z: 0}
   m_Center: {x: 0, y: 0, z: -1.25}
+--- !u!114 &1491390826
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1491390819}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e4c4ff40739c7904ca26c14ffbdc4176, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  target: {fileID: 1840187342}
+  functionName: OnQuit
+  trigger: 4
+  includeChildren: 0
 --- !u!1 &1509357491
 GameObject:
   m_ObjectHideFlags: 0
