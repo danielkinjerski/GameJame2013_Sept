@@ -17,7 +17,7 @@ partial class MouseOrbit { }
 
 function Start () {
     var angles = transform.eulerAngles;
-   // x = angles.y;
+    x = angles.y;
     //y = angles.x;
 
 	// Make the rigid body not change rotation
@@ -27,15 +27,15 @@ function Start () {
 
 function LateUpdate () {
    
-    		//x += Time.deltaTime * Input.GetAxis("Mouse X") * xSpeed;
+    		x += Time.deltaTime * Input.GetAxis("Mouse X") * xSpeed;
     		//y -= Time.deltaTime * Input.GetAxis("Mouse Y") * ySpeed;
     		//y = ClampAngle(y, yMinLimit, yMaxLimit);
     	
 
-        var rotation = Quaternion.EulerAngles(90, 0, 0);
+        var rotation = Quaternion.EulerAngles(/*y * Mathf.Deg2Rad*/35 * Mathf.Deg2Rad, x * Mathf.Deg2Rad, 0);
         var position = rotation * Vector3(0.0, 0.0, -distance) + target.position;
         
-        //transform.rotation = rotation;
+        transform.rotation = rotation;
         transform.position = position;
     
 }
