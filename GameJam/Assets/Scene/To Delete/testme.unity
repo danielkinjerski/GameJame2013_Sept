@@ -190,6 +190,7 @@ GameObject:
   - 33: {fileID: 1361218079}
   - 23: {fileID: 1361218078}
   - 114: {fileID: 1361218077}
+  - 114: {fileID: 1361218082}
   m_Layer: 0
   m_Name: CD4_protect1
   m_TagString: Enemy
@@ -284,6 +285,7 @@ MonoBehaviour:
   maxSpeed: 5
   accelerationRate: .100000001
   cc: {fileID: 0}
+  rb: {fileID: 0}
   target: {fileID: 0}
   seekThreshold: 10
   attackThreshold: 5
@@ -293,6 +295,20 @@ MonoBehaviour:
   regenHealthTime: 1
   regenAmount: 10
   destroyTime: 5
+--- !u!114 &1361218082
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1361218075}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ed66e75881d6fe244906f6141cc4482f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_fDestruktionSpeed: .100000001
+  m_Mat: {fileID: 2100000, guid: 4dcdab3ed7a6c064890768fc801fd8bc, type: 2}
+  m_fTime: 0
 --- !u!1 &1461869795
 GameObject:
   m_ObjectHideFlags: 0
@@ -317,7 +333,7 @@ Renderer:
     type: 2}
   m_PrefabInternal: {fileID: 1641320054}
   m_GameObject: {fileID: 1461869795}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_LightmapIndex: 255
@@ -528,6 +544,14 @@ Prefab:
     - target: {fileID: 400002, guid: 9f9c368a1cc338349aee5c44193b4468, type: 2}
       propertyPath: m_LocalRotation.w
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2300002, guid: 9f9c368a1cc338349aee5c44193b4468, type: 2}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: 9f9c368a1cc338349aee5c44193b4468, type: 2}
+      propertyPath: m_Enabled
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 9f9c368a1cc338349aee5c44193b4468, type: 2}

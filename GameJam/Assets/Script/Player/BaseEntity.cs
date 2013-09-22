@@ -35,7 +35,7 @@ public class BaseEntity : MonoBehaviour {
     {
         if (downwardForce > -gravity)
             downwardForce += -gravity * Time.smoothDeltaTime;
-        moveDir = new Vector3(moveDir.x, downwardForce, moveDir.z) * Time.smoothDeltaTime;
+        moveDir = new Vector3(moveDir.x, downwardForce, moveDir.z);
     }
 
     public virtual Vector2 InputMovement()
