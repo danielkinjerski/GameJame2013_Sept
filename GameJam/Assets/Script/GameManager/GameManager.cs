@@ -1,5 +1,6 @@
 using UnityEngine;
 using System.Collections;
+using System.Collections.Generic;
 
 #region Enums
 public enum GameState
@@ -16,6 +17,8 @@ public  enum CurrentPlayMode
     Grey = 3
 }
 #endregion
+
+
 public class GameManager : MonoBehaviour
 {
     public delegate void LabelUpdate(string text);
@@ -23,19 +26,31 @@ public class GameManager : MonoBehaviour
     public event LabelUpdate OnWhiteBloodCountChange;
     public event LabelUpdate OnVirusCellCountChange;
 
+    public string levels;
+
     #region Variables
 
-    public float levelTimer = 0, maxTime;
+    float levelTimer = 0, maxTime;
+    int whiteBloodCount = 500;
+    int virusCount = 1;
 
     #endregion
 
-    
+    void Start()
+    {
+        DontDestroyOnLoad(this);
+    }
 
     #region UI Events
 
-    void PlayHit()
+    void OnPlay()
     {
-        Debug.Log("Play");
+        Debug.Log("start");
+        Application.LoadLevel(levels);
+    }
+
+    void StartGame()
+    {
         StartCoroutine(GameTimer());
     }
 
@@ -60,14 +75,16 @@ public class GameManager : MonoBehaviour
 
     void CellDie()
     {
+        whiteBloodCount -= 20;
         if (OnWhiteBloodCountChange != null)
         {
-            OnWhiteBloodCountChange("");
+            OnWhiteBloodCountChange(whiteBloodCount.ToString());
         }
 
+        virusCount += 4;
         if (OnVirusCellCountChange != null)
         {
-            OnVirusCellCountChange("");
+            OnVirusCellCountChange(virusCount.ToString());
         }
     }
 

@@ -27,7 +27,7 @@ public class BaseEntity : MonoBehaviour {
         dir.Normalize();
         ApplyVelocity(ref dir);
         CorrectDirection(ref dir);
-        //ApplyGravity(ref dir);        
+        ApplyGravity(ref dir);        
         return dir;
     }
 

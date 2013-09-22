@@ -21,7 +21,6 @@ public class PlayerEntity : BaseEntity
 
     void OnCollisionStay(Collision col)
     {
-        print(col.gameObject.name);
         if(col.gameObject.CompareTag("Enemy"))
         {
             if(Input.GetKeyDown(KeyCode.Space))
