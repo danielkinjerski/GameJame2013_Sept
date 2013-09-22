@@ -186,7 +186,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   infected: {fileID: 0}
-  health: 100
+  health: 100000000
   regenHealthTime: 1
   damageTaken: 20
   regenAmount: 10

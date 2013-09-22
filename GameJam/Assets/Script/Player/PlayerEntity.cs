@@ -19,15 +19,10 @@ public class PlayerEntity : BaseEntity
             cc.Move(dir);
     }
 	
-	void OnCollisionStay(Collision collision)
+	public void CellCollision(EnemyEntity ee)
 	{
-		if(collision.gameObject.CompareTag("Enemy"))
-		{
-			if(Input.GetKeyDown(KeyCode.Space))
-			{
-				print("attack");
-				collision.gameObject.SendMessage("ApplyDamage", damage);
-			}
-		}
+		if(Input.GetKeyDown(KeyCode.Space))
+			ee.ApplyDamage(damage);	
 	}
+	
 }
