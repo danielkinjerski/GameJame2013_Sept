@@ -112,6 +112,11 @@ public class GameManager : MonoBehaviour
         }
     }
 
+    public void OnQuit()
+    {
+        Application.Quit();
+    }
+
     #endregion
 
 
