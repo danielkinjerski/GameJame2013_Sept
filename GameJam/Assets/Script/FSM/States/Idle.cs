@@ -1,19 +1,20 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class Idle : State<EnemyMovement>
+public class Idle : State<EnemyEntity>
 {
     static readonly Idle instance = new Idle();
     public static Idle Instance { get { return instance; } }
     static Idle() { }
     private Idle() { }
 
-    public override bool Enter(EnemyMovement bm)
+    public override bool Enter(EnemyEntity bm)
     {
+        Debug.Log("Idle");
         return true;
     }
 
-    public override bool Execute(EnemyMovement bm)
+    public override bool Execute(EnemyEntity bm)
     {
         if (bm.CheckDistanceToTarget() != 0 && bm.CheckDistanceToTarget() < bm.seekThreshold)
         {
@@ -23,7 +24,7 @@ public class Idle : State<EnemyMovement>
         return true;
     }
 
-    public override bool Exit(EnemyMovement bm)
+    public override bool Exit(EnemyEntity bm)
     {
         return true;
     }
