@@ -670,7 +670,7 @@ MonoBehaviour:
   mHeight: 60
   mDepth: 15
   mFont: {fileID: 11400000, guid: ac44b8a25154a9d40a172ab5851e0986, type: 2}
-  mText: This CD4_Cell has no drugs in it. defence 0.
+  mText: This CD4 Cell does not have any treatments. Inital Outbreak.
   mEncoding: 1
   mMaxLineCount: 3
   mPassword: 0
@@ -708,7 +708,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 335048472}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 13, y: -30, z: 0}
+  m_LocalPosition: {x: 19, y: -30, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 555045578}
@@ -725,11 +725,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mColor: {r: 1, g: 1, b: 1, a: 1}
   mPivot: 1
-  mWidth: 176
+  mWidth: 188
   mHeight: 60
   mDepth: 17
   mFont: {fileID: 11400000, guid: ac44b8a25154a9d40a172ab5851e0986, type: 2}
-  mText: This CD4_Cell has 2 of the drugs, defence is 2.
+  mText: 'This CD4 Cell is has treatment level 2. For HIV Infection. '
   mEncoding: 1
   mMaxLineCount: 3
   mPassword: 0
@@ -924,17 +924,17 @@ MonoBehaviour:
   widgetsAreStatic: 0
   cullWhileDragging: 0
   worldToLocal:
-    e00: 287.5
+    e00: 160
     e01: 0
     e02: 0
-    e03: .49999997
+    e03: .606060684
     e10: 0
-    e11: 287.5
+    e11: 160
     e12: 0
-    e13: -1
+    e13: -.606060624
     e20: 0
     e21: 0
-    e22: 287.5
+    e22: 160
     e23: 0
     e30: 0
     e31: 0
@@ -1033,7 +1033,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 503103798}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -30, z: 0}
+  m_LocalPosition: {x: 17, y: -30, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 646350005}
@@ -1050,11 +1050,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mColor: {r: 1, g: 1, b: 1, a: 1}
   mPivot: 1
-  mWidth: 150
+  mWidth: 184
   mHeight: 60
   mDepth: 17
   mFont: {fileID: 11400000, guid: ac44b8a25154a9d40a172ab5851e0986, type: 2}
-  mText: This is what the cd4 exploding cell looks like.
+  mText: 'This is what the CD4 cell looks like when it is infected and dying. '
   mEncoding: 1
   mMaxLineCount: 3
   mPassword: 0
@@ -1422,7 +1422,7 @@ MonoBehaviour:
   mDepth: 8
   mFont: {fileID: 11400000, guid: 7a48ea22e80d1ac4b97fdd87f9009546, type: 2}
   mText: You brought the white blood cell count down to [3f3f3f][wcell][-]. Lower
-    than 200 alls for effective HIV take over. The number of virus cells you spawned
+    than 200 allows for effective HIV take over. The number of virus cells you spawned
     is [450000][vcell][-].
   mEncoding: 1
   mMaxLineCount: 0
@@ -1490,11 +1490,10 @@ MonoBehaviour:
   mColor: {r: 1, g: 1, b: 1, a: 1}
   mPivot: 1
   mWidth: 220
-  mHeight: 100
+  mHeight: 60
   mDepth: 18
   mFont: {fileID: 11400000, guid: ac44b8a25154a9d40a172ab5851e0986, type: 2}
-  mText: This CD4_Cell has all 3 drugs, If you touch it, It will Stop you from destorying
-    cells. You loose.
+  mText: This CD4 Cell has level 3 Treatment, Neutralize the HIV Cell.
   mEncoding: 1
   mMaxLineCount: 5
   mPassword: 0
@@ -2471,17 +2470,17 @@ MonoBehaviour:
   widgetsAreStatic: 0
   cullWhileDragging: 0
   worldToLocal:
-    e00: 287.5
+    e00: 160
     e01: 0
     e02: 0
-    e03: .49999997
+    e03: .606060684
     e10: 0
-    e11: 287.5
+    e11: 160
     e12: 0
-    e13: -1
+    e13: -.606060624
     e20: 0
     e21: 0
-    e22: 287.5
+    e22: 160
     e23: 0
     e30: 0
     e31: 0
@@ -2943,7 +2942,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1124073814}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2, y: -28, z: 0}
+  m_LocalPosition: {x: -14, y: -28, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1872753435}
@@ -2960,11 +2959,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mColor: {r: 1, g: 1, b: 1, a: 1}
   mPivot: 1
-  mWidth: 164
+  mWidth: 190
   mHeight: 60
   mDepth: 16
   mFont: {fileID: 11400000, guid: ac44b8a25154a9d40a172ab5851e0986, type: 2}
-  mText: This CD4_Cell has 1 of the drugs, defense is 1.
+  mText: 'This CD4 Cell is has treatment level 1. For HIV Infection. '
   mEncoding: 1
   mMaxLineCount: 3
   mPassword: 0
@@ -3640,7 +3639,7 @@ Transform:
   m_GameObject: {fileID: 1487981385}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: .00347826094, y: .00347826094, z: .00347826094}
+  m_LocalScale: {x: .00625000009, y: .00625000009, z: .00625000009}
   m_Children:
   - {fileID: 1093280449}
   m_Father: {fileID: 1840187343}
@@ -3677,17 +3676,17 @@ MonoBehaviour:
   widgetsAreStatic: 0
   cullWhileDragging: 0
   worldToLocal:
-    e00: 287.5
+    e00: 160
     e01: 0
     e02: 0
     e03: 0
     e10: 0
-    e11: 287.5
+    e11: 160
     e12: 0
     e13: 0
     e20: 0
     e21: 0
-    e22: 287.5
+    e22: 160
     e23: 0
     e30: 0
     e31: 0
@@ -4751,17 +4750,17 @@ MonoBehaviour:
   widgetsAreStatic: 0
   cullWhileDragging: 0
   worldToLocal:
-    e00: 212
+    e00: 160
     e01: 0
     e02: 0
-    e03: 0
+    e03: .606060684
     e10: 0
-    e11: 212
+    e11: 160
     e12: 0
-    e13: -.5
+    e13: -.606060624
     e20: 0
     e21: 0
-    e22: 212
+    e22: 160
     e23: 0
     e30: 0
     e31: 0
@@ -4844,7 +4843,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2025790825}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -.49999997, y: 1, z: 0}
+  m_LocalPosition: {x: -.606060684, y: .606060624, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1008219037}
