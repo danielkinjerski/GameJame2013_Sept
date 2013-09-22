@@ -21,11 +21,14 @@ public class PlayerEntity : BaseEntity
 
     void OnCollisionStay(Collision col)
     {
-        print(col.gameObject.name);
+      
         if(col.gameObject.CompareTag("Enemy"))
         {
             if(Input.GetKeyDown(KeyCode.Space))
-                col.gameObject.SendMessage("ApplyDamage",damage);	
+			{
+				Debug.Log("loaoaoa shit");
+				col.gameObject.SendMessage("ApplyDamage",damage);
+			}
         }
     }
 	

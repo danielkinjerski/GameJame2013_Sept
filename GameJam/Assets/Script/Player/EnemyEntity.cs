@@ -4,7 +4,8 @@ using System.Collections;
 public class EnemyEntity : BaseEntity 
 {
     public StateMachine<EnemyEntity> FSM = new StateMachine<EnemyEntity>();
-
+	
+	public GameObject playerclone;
     public Transform target;
     public float seekThreshold = 0;
     public float attackThreshold = 0;
@@ -14,14 +15,17 @@ public class EnemyEntity : BaseEntity
 	public int health;
 	public float regenHealthTime = 1f;
 	public int regenAmount = 10;
-	
+	private int nubclone;
+	public int maxNubClone = 2;
 	public float destroyTime = 5f;
 
     public void Start()
     {
         base.Start();
         FSM.Configure(this, Idle.Instance);
-		
+		if(playerclone == null){
+			playerclone = GameObject.FindGameObjectWithTag("PlayerClone");
+		}
 		health = maxHealth;
 		StartCoroutine(Regenerate());
     }
@@ -47,11 +51,17 @@ public class EnemyEntity : BaseEntity
 		
 		if(health <= 0)
 		{
+		
+			GetComponent<SphereCollider>().enabled=false;
 			this.gameObject.renderer.material = infected;
 			Timed t = GetComponent<Timed>();
 			t.m_Mat = this.gameObject.renderer.material;
 			t.enabled = true;
-			GetComponent<BoxCollider>().enabled=false;
+			if(nubclone <= maxNubClone){
+				Instantiate(playerclone,this.gameObject.transform.position,Quaternion.identity);
+				nubclone++;
+			}
+			
 			StartCoroutine(destroyCell());
 		}
     }
