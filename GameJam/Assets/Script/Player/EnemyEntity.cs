@@ -5,6 +5,9 @@ public class EnemyEntity : BaseEntity
 {
     public StateMachine<EnemyEntity> FSM = new StateMachine<EnemyEntity>();
 
+    public delegate void OnDie();
+    public event OnDie OnDied;
+
     public Transform target;
     public float seekThreshold = 0;
     public float attackThreshold = 0;
@@ -17,6 +20,8 @@ public class EnemyEntity : BaseEntity
 	
 	public float destroyTime = 5f;
 
+    public bool invincible = false;
+
     public void Start()
     {
         base.Start();
@@ -24,6 +29,10 @@ public class EnemyEntity : BaseEntity
 		
 		health = maxHealth;
 		StartCoroutine(Regenerate());
+
+        GameManager gm = GameObject.FindObjectOfType(typeof(GameManager)) as GameManager;
+        OnDied += gm.CellDie;
+
     }
 
 
@@ -44,16 +53,6 @@ public class EnemyEntity : BaseEntity
     public void Update()
     {
         FSM.Update();
-		
-		if(health <= 0)
-		{
-			this.gameObject.renderer.material = infected;
-			Timed t = GetComponent<Timed>();
-			t.m_Mat = this.gameObject.renderer.material;
-			t.enabled = true;
-			GetComponent<BoxCollider>().enabled=false;
-			StartCoroutine(destroyCell());
-		}
     }
     
 
@@ -69,7 +68,25 @@ public class EnemyEntity : BaseEntity
 	
 	public void ApplyDamage(int damage)
 	{
+        if (health <= 0 || invincible)
+            return;
+
 		health -= damage;
+
+        if (health <= 0)
+        {
+            if (OnDied != null)
+            {
+                OnDied();
+            }
+            this.gameObject.renderer.material = infected;
+            Timed t = GetComponent<Timed>();
+            t.m_Mat = this.gameObject.renderer.material;
+            t.enabled = true;
+            GetComponent<BoxCollider>().enabled = false;
+            StartCoroutine(destroyCell());
+        }
+
 	}
 	
 	IEnumerator Regenerate()

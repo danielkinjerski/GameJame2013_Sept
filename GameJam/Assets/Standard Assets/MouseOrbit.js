@@ -27,23 +27,14 @@ function Start () {
 
 function LateUpdate () {
    
-    		x += Time.deltaTime * Input.GetAxis("Mouse X") * xSpeed;
+    		//x += Time.deltaTime * Input.GetAxis("Mouse X") * xSpeed;
     		//y -= Time.deltaTime * Input.GetAxis("Mouse Y") * ySpeed;
     		//y = ClampAngle(y, yMinLimit, yMaxLimit);
     	
 
-        var rotation = Quaternion.EulerAngles(/*y * Mathf.Deg2Rad*/35 * Mathf.Deg2Rad, x * Mathf.Deg2Rad, 0);
-        var position = rotation * Vector3(0.0, 0.0, -distance) + target.position;
+        //var rotation = Quaternion.EulerAngles(/*y * Mathf.Deg2Rad*/35 * Mathf.Deg2Rad, x * Mathf.Deg2Rad, 0);
+        var position = Vector3(0, -distance, 0) + target.position;
         
-        transform.rotation = rotation;
         transform.position = position;
     
-}
-
-static function ClampAngle (angle : float, min : float, max : float) {
-	if (angle < -360)
-		angle += 360;
-	if (angle > 360)
-		angle -= 360;
-	return Mathf.Clamp (angle, min, max);
 }

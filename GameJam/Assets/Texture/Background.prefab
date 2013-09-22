@@ -58,6 +58,96 @@ MonoBehaviour:
     paddingRight: 0
     paddingTop: 0
     paddingBottom: 0
+  - name: CD4_Cells_03
+    outer:
+      serializedVersion: 2
+      x: 1247
+      y: 1829
+      width: 221
+      height: 219
+    inner:
+      serializedVersion: 2
+      x: 1247
+      y: 1829
+      width: 221
+      height: 219
+    rotated: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: CD4_Cells_05
+    outer:
+      serializedVersion: 2
+      x: 1247
+      y: 1609
+      width: 219
+      height: 219
+    inner:
+      serializedVersion: 2
+      x: 1247
+      y: 1609
+      width: 219
+      height: 219
+    rotated: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: CD4_Cells_07
+    outer:
+      serializedVersion: 2
+      x: 1469
+      y: 1829
+      width: 219
+      height: 219
+    inner:
+      serializedVersion: 2
+      x: 1469
+      y: 1829
+      width: 219
+      height: 219
+    rotated: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: CD4_Cells_12
+    outer:
+      serializedVersion: 2
+      x: 1025
+      y: 1826
+      width: 221
+      height: 222
+    inner:
+      serializedVersion: 2
+      x: 1025
+      y: 1826
+      width: 221
+      height: 222
+    rotated: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: CD4_Cells_13
+    outer:
+      serializedVersion: 2
+      x: 1025
+      y: 1603
+      width: 219
+      height: 222
+    inner:
+      serializedVersion: 2
+      x: 1025
+      y: 1603
+      width: 219
+      height: 222
+    rotated: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
   mCoordinates: 0
   mPixelSize: 1
   mReplacement: {fileID: 0}

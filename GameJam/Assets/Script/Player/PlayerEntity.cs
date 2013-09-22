@@ -7,7 +7,7 @@ public class PlayerEntity : BaseEntity
 	
     public override Vector2 InputMovement()
     {
-        Vector3 dir = Camera.main.transform.forward * Input.GetAxis("Vertical") + Input.GetAxis("Horizontal") * Camera.main.transform.right;
+        Vector3 dir = Camera.main.transform.up * Input.GetAxis("Vertical") + Input.GetAxis("Horizontal") * Camera.main.transform.right;
         Vector2 dir2 = new Vector2(dir.x, dir.z);
         return dir2.normalized;
     }
@@ -23,8 +23,10 @@ public class PlayerEntity : BaseEntity
     {
         if(col.gameObject.CompareTag("Enemy"))
         {
-            if(Input.GetKeyDown(KeyCode.Space))
-                col.gameObject.SendMessage("ApplyDamage",damage);	
+            if (Input.GetKeyDown(KeyCode.Space))
+            {
+                col.gameObject.SendMessage("ApplyDamage", damage);
+            }
         }
     }
 	
