@@ -7,7 +7,7 @@ public class PlayerEntity : BaseEntity
 	
     public override Vector2 InputMovement()
     {
-        Vector3 dir = Camera.main.transform.up * Input.GetAxis("Vertical") + Input.GetAxis("Horizontal") * Camera.main.transform.right;
+        Vector3 dir = Camera.main.transform.up * (Input.GetAxis("Vertical") + Input.GetAxis("Joy1 Axis 1")) + (Input.GetAxis("Horizontal") + Input.GetAxis("Joy1 Axis 1")) * Camera.main.transform.right;
         Vector2 dir2 = new Vector2(dir.x, dir.z);
         return dir2.normalized;
     }
@@ -24,7 +24,7 @@ public class PlayerEntity : BaseEntity
       
         if(col.gameObject.CompareTag("Enemy"))
         {
-            if(Input.GetKeyDown(KeyCode.Space))
+            if(Input.GetKeyDown(KeyCode.Space) || Input.GetKeyDown(KeyCode.Joystick1Button0))
 			{
 				Debug.Log("loaoaoa shit");
 				col.gameObject.SendMessage("ApplyDamage",damage);

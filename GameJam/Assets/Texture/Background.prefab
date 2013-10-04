@@ -148,6 +148,42 @@ MonoBehaviour:
     paddingRight: 0
     paddingTop: 0
     paddingBottom: 0
+  - name: JoystickThumb
+    outer:
+      serializedVersion: 2
+      x: 1469
+      y: 1700
+      width: 128
+      height: 128
+    inner:
+      serializedVersion: 2
+      x: 1469
+      y: 1700
+      width: 128
+      height: 128
+    rotated: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: xbox-controller-a-button-md
+    outer:
+      serializedVersion: 2
+      x: 1598
+      y: 1766
+      width: 62
+      height: 62
+    inner:
+      serializedVersion: 2
+      x: 1598
+      y: 1766
+      width: 62
+      height: 62
+    rotated: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
   mCoordinates: 0
   mPixelSize: 1
   mReplacement: {fileID: 0}
