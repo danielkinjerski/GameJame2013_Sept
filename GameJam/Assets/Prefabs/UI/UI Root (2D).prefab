@@ -1197,6 +1197,7 @@ GameObject:
   - 114: {fileID: 11400188}
   - 114: {fileID: 11400186}
   - 114: {fileID: 11400200}
+  - 114: {fileID: 11400262}
   m_Layer: 8
   m_Name: btnReplay
   m_TagString: Untagged
@@ -1395,6 +1396,7 @@ GameObject:
   - 114: {fileID: 11400232}
   - 114: {fileID: 11400234}
   - 114: {fileID: 11400236}
+  - 114: {fileID: 11400260}
   m_Layer: 8
   m_Name: btnMainMenu
   m_TagString: Untagged
@@ -1571,6 +1573,38 @@ GameObject:
   - 114: {fileID: 11400254}
   m_Layer: 8
   m_Name: Sprite (backgroundidea1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &100192
+GameObject:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 400192}
+  - 114: {fileID: 11400256}
+  m_Layer: 8
+  m_Name: Sprite (Button)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &100194
+GameObject:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 400194}
+  - 114: {fileID: 11400258}
+  m_Layer: 8
+  m_Name: Sprite (Button)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1824,6 +1858,8 @@ Transform:
   - {fileID: 400036}
   - {fileID: 400042}
   - {fileID: 400040}
+  - {fileID: 400194}
+  - {fileID: 400192}
   m_Father: {fileID: 400028}
 --- !u!4 &400040
 Transform:
@@ -2727,6 +2763,28 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 400138}
+--- !u!4 &400192
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100192}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 235, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 400038}
+--- !u!4 &400194
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100194}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 285, y: 210, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 400038}
 --- !u!20 &2000000
 Camera:
   m_ObjectHideFlags: 1
@@ -3378,8 +3436,8 @@ MonoBehaviour:
   touchClickThreshold: 40
   rangeDistance: -1
   scrollAxisName: Mouse ScrollWheel
-  verticalAxisName: Vertical
-  horizontalAxisName: Horizontal
+  verticalAxisName: Joy1 Axis 2
+  horizontalAxisName: Joy1 Axis 1
   submitKey0: 13
   submitKey1: 330
   cancelKey0: 27
@@ -3523,7 +3581,7 @@ MonoBehaviour:
   mPivot: 2
   mWidth: 63
   mHeight: 28
-  mDepth: 0
+  mDepth: 2
   mFont: {fileID: 11400000, guid: 7a48ea22e80d1ac4b97fdd87f9009546, type: 2}
   mText: 500
   mEncoding: 1
@@ -4322,7 +4380,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 35a096bcfb49b9c409c3875999a2cda9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startsSelected: 1
+  startsSelected: 0
   selectOnClick: {fileID: 0}
   selectOnUp: {fileID: 0}
   selectOnDown: {fileID: 0}
@@ -4339,7 +4397,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 35a096bcfb49b9c409c3875999a2cda9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startsSelected: 1
+  startsSelected: 0
   selectOnClick: {fileID: 0}
   selectOnUp: {fileID: 0}
   selectOnDown: {fileID: 0}
@@ -4374,7 +4432,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   startsSelected: 1
-  selectOnClick: {fileID: 0}
+  selectOnClick: {fileID: 11400124}
   selectOnUp: {fileID: 0}
   selectOnDown: {fileID: 0}
   selectOnLeft: {fileID: 0}
@@ -4620,6 +4678,7 @@ MonoBehaviour:
   MainLevel: UITest
   PlayLevel: Level 1
   summary: {fileID: 11400168}
+  btnKey: {fileID: 11400262}
 --- !u!114 &11400148
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -5795,6 +5854,86 @@ MonoBehaviour:
   callWhenFinished: 
   from: {x: -5, y: -5, z: 0}
   to: {x: 5, y: 5, z: 0}
+--- !u!114 &11400256
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100192}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1b3dc54f924693f41b5cbecb267e647a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mColor: {r: .184313729, g: .184313729, b: .184313729, a: .325490206}
+  mPivot: 4
+  mWidth: 60
+  mHeight: 30
+  mDepth: 1
+  mAtlas: {fileID: 11400000, guid: 2f2473f73b9ca724f9080d6d76009ea2, type: 2}
+  mSpriteName: Button
+  mFillCenter: 1
+  mType: 1
+  mFillDirection: 4
+  mFillAmount: 1
+  mInvert: 0
+--- !u!114 &11400258
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100194}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1b3dc54f924693f41b5cbecb267e647a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mColor: {r: 1, g: 1, b: 1, a: .184313729}
+  mPivot: 4
+  mWidth: 75
+  mHeight: 65
+  mDepth: 1
+  mAtlas: {fileID: 11400000, guid: 2f2473f73b9ca724f9080d6d76009ea2, type: 2}
+  mSpriteName: Button
+  mFillCenter: 1
+  mType: 1
+  mFillDirection: 4
+  mFillAmount: 1
+  mInvert: 0
+--- !u!114 &11400260
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100168}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 35a096bcfb49b9c409c3875999a2cda9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  startsSelected: 0
+  selectOnClick: {fileID: 0}
+  selectOnUp: {fileID: 0}
+  selectOnDown: {fileID: 0}
+  selectOnLeft: {fileID: 11400262}
+  selectOnRight: {fileID: 0}
+--- !u!114 &11400262
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100144}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 35a096bcfb49b9c409c3875999a2cda9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  startsSelected: 0
+  selectOnClick: {fileID: 0}
+  selectOnUp: {fileID: 0}
+  selectOnDown: {fileID: 0}
+  selectOnLeft: {fileID: 0}
+  selectOnRight: {fileID: 11400260}
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1

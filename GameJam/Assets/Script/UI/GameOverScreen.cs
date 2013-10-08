@@ -6,6 +6,7 @@ public class GameOverScreen : MonoBehaviour
     public GameManager gm;
     public string MainLevel, PlayLevel;
     public UILabel summary;
+    public UIButtonKeys btnKey;
 
     void Start()
     {
@@ -28,5 +29,17 @@ public class GameOverScreen : MonoBehaviour
     {
         summary.text = summary.text.Replace("[vcell]", vcell);
         summary.text = summary.text.Replace("[wcell]", wcell);
+    }
+
+    void OnEnable()
+    {
+        if (!NGUITools.GetActive(UICamera.selectedObject))
+        {
+            UICamera.selectedObject = btnKey.gameObject;
+        }
+        else
+        {
+            UICamera.Notify(btnKey.gameObject, "OnHover", true);
+        }
     }
 }

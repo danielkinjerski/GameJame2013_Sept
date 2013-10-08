@@ -21,42 +21,7 @@ Platform assembly: C:\Users\Daniel\Documents\Dev\GameJame_2013Sept\GameJam\Demo_
 Loading C:\Users\Daniel\Documents\Dev\GameJame_2013Sept\GameJam\Demo_Data\Managed\Assembly-UnityScript-firstpass.dll into Unity Child Domain
 Platform assembly: C:\Users\Daniel\Documents\Dev\GameJame_2013Sept\GameJam\Demo_Data\Managed\Assembly-UnityScript.dll (this message is harmless)
 Loading C:\Users\Daniel\Documents\Dev\GameJame_2013Sept\GameJam\Demo_Data\Managed\Assembly-UnityScript.dll into Unity Child Domain
-- Completed reload, in  0.038 seconds
-desktop: 1920x1080 60Hz; virtual: 1920x1080 at 0,0
+- Completed reload, in  0.154 seconds
 <RI> Initializing input.
 <RI> Input initialized.
-Platform assembly: C:\Users\Daniel\Documents\Dev\GameJame_2013Sept\GameJam\Demo_Data\Managed\System.Core.dll (this message is harmless)
-FADE IN
- 
-(Filename: C:/BuildAgent/work/cac08d8a5e25d4cb/Runtime/ExportGenerated/StandalonePlayer/UnityEngineDebug.cpp Line: 54)
-
-wait
- 
-(Filename: C:/BuildAgent/work/cac08d8a5e25d4cb/Runtime/ExportGenerated/StandalonePlayer/UnityEngineDebug.cpp Line: 54)
-
-FADE out
- 
-(Filename: C:/BuildAgent/work/cac08d8a5e25d4cb/Runtime/ExportGenerated/StandalonePlayer/UnityEngineDebug.cpp Line: 54)
-
-FADE IN
- 
-(Filename: C:/BuildAgent/work/cac08d8a5e25d4cb/Runtime/ExportGenerated/StandalonePlayer/UnityEngineDebug.cpp Line: 54)
-
-wait
- 
-(Filename: C:/BuildAgent/work/cac08d8a5e25d4cb/Runtime/ExportGenerated/StandalonePlayer/UnityEngineDebug.cpp Line: 54)
-
-FADE out
- 
-(Filename: C:/BuildAgent/work/cac08d8a5e25d4cb/Runtime/ExportGenerated/StandalonePlayer/UnityEngineDebug.cpp Line: 54)
-
-UnloadTime: 0.319210 ms
-Unloading 3 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
-
-Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 591.
-Total: 0.724056 ms (FindLiveObjects: 0.029824 ms CreateObjectMapping: 0.014764 ms MarkObjects: 0.284956 ms  DeleteObjects: 0.007972 ms)
-
-start
- 
-(Filename: C:/BuildAgent/work/cac08d8a5e25d4cb/Runtime/ExportGenerated/StandalonePlayer/UnityEngineDebug.cpp Line: 54)
-
+desktop: 1440x900 60Hz; virtual: 1440x900 at 0,0
